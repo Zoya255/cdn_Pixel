@@ -1,0 +1,19 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page14979458.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Scheme} =http
+RewriteRule ^(.*)$ https://www\.pixel27\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Scheme} =https
+RewriteCond %{HTTP_HOST} ^pixel27.ru [NC]
+RewriteRule ^(.*)$ https://www\.pixel27\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3332-3332-4436-a362-363165346230/logo_1.ico [R=302,L]
+
