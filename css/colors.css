@@ -2,33 +2,33 @@
 
 /* -------------------- clear -------------------- */
 
-.color__purple{
+.color-purple{
     background-color: #7f4eab;
 }
-.color__yellow{
+.color-yellow{
     background-color: #ffc300;
 }
-.color__green{
+.color-green{
     background-color: #2F9751;
 }
 
 /* -------------------- gradients -------------------- */
 
-.color__purple-gradient{
+.color-purple-gradient{
     background: linear-gradient(90deg, #ba66d3 15.04%, #4a30b5 100%);
 }
-.color__green-gradient{
+.color-green-gradient{
     background: linear-gradient(120.45deg, #239F4B 44.35%, #347449 100%);
 }
 
 /* -------------------- text -------------------- */
 
-.color__white-text{
+.color-white-text{
     color: #ffffff;
 }
-.color__gray-text{
+.color-gray-text{
     color: #333333;
 }
-.color__black-text{
+.color-black-text{
     color: #000000;
 }

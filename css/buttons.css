@@ -3,7 +3,7 @@
 /* -------------------- base -------------------- */
 
 .btn{
-	display: flex;
+	display: inline-flex;
 
 	font-family: Montserrat, sans-serif;
 	font-style: normal;
@@ -37,4 +37,43 @@
 .btn-link-bordered:hover{
 	color: #000000;
 	background-color: #ffffff;
+}
+
+/* -------------------- buttons -------------------- */
+
+.btn-yellow{
+	font-weight: bold;
+
+	padding: 18px 25px;
+
+	color: #ffffff;
+	background-color: #ffc300;
+}
+.btn-yellow:hover{
+	opacity: 0.8;
+}
+
+.btn-purple{
+	font-weight: bold;
+
+	padding: 18px 25px;
+
+	color: #ffffff;
+	background: #C86DD7;
+}
+.btn-purple:hover{
+	opacity: 0.8;
+}
+
+.btn-purple-bordered{
+	font-weight: bold;
+
+	padding: 15px 22px;
+
+	color: #DA9CE4;
+	border: 3px solid #DA9CE4;
+}
+.btn-link-bordered:hover{
+	color: #ffffff;
+	background: #DA9CE4;
 }

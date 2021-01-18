@@ -67,6 +67,163 @@
 
 }
 
+/* -------------------- section main -------------------- */
+
+.global__section-main{
+    display: grid;
+
+    grid-template-areas: "sm_text sm_horn";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+    height: calc(100vh - 79px);
+
+    padding: 0 135px;
+
+    box-shadow: 0 13px 10px rgba(0, 0, 0, 0.25);
+}
+.global__section-main-text{
+    grid-area: sm_text;
+
+    margin-top: 150px;
+}
+.global__section-main-horn{
+    grid-area: sm_horn;
+
+    margin-top: 50px;
+}
+
+/* -------------------- section about -------------------- */
+
+.global__section-about{
+    display: grid;
+
+    grid-template-areas: "sa_logo sa_text";
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: auto;
+
+    padding-top: 235px;
+    padding-left: 105px;
+    padding-right: 200px;
+}
+.global__section-about-logo{
+    width: 767px;
+    height: 516px;
+
+    margin-right: 20px;
+
+    background-color: #7F4EAB;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.global__section-about-logo-image{
+    width: 767px;
+    height: 516px;
+
+    margin-left: 30px;
+    margin-top: -30px;
+
+    background-image: url("../img/pixel-logo.png");
+    background-size: contain;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------- section advantages -------------------- */
+
+.global__section-advantages{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 235px 135px;
+}
+.global__section-advantages-block{
+    display: block;
+
+    width: 24%;
+}
+
+/* -------------------- section works -------------------- */
+
+.global__section-works{
+    display: grid;
+
+    grid-template-areas: "sw_text sw_logo";
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+
+    padding: 0 135px;
+}
+.global__section-works-text{
+
+}
+.global__section-works-logo{
+    width: 767px;
+    height: 516px;
+
+    margin-left: 130px;
+
+    background: linear-gradient(120.45deg, #239F4B 44.35%, #347449 100%);
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.global__section-works-logo-image{
+    width: 767px;
+    height: 516px;
+
+    margin-top: -30px;
+    margin-left: -30px;
+
+    background-image: url("../img/heineken-logo.png");
+    background-size: cover;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------- section portfolio -------------------- */
+
+.global__section-portfolio{
+    display: grid;
+
+    padding-top: 235px;
+}
+
+/* -------------------- section why -------------------- */
+
+.global__section-why{
+    display: grid;
+
+
+}
+
+/* -------------------- section services -------------------- */
+
+.global__section-services{
+    display: grid;
+
+
+}
+
+/* -------------------- section commercial -------------------- */
+
+.global__section-commercial{
+    display: grid;
+
+
+}
+
+/* -------------------- section comments / invisible -------------------- */
+
+.global__section-comments{
+    display: grid;
+
+
+}
+
+/* -------------------- section form -------------------- */
+
+.global__section-form{
+    display: grid;
+
+
+}
+
 /* -------------------- footer -------------------- */
 
 .global__footer{
