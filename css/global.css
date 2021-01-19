@@ -102,7 +102,7 @@
     grid-template-columns: 2fr 1.5fr;
     grid-template-rows: auto;
 
-    padding-top: 235px;
+    margin-top: 235px;
     padding-left: 105px;
     padding-right: 200px;
 }
@@ -112,7 +112,6 @@
 
     margin-right: 20px;
 
-    background-color: #7F4EAB;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-about-logo-image{
@@ -133,7 +132,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 235px 135px;
+    margin: 235px 135px;
 }
 .global__section-advantages-block{
     display: block;
@@ -150,7 +149,7 @@
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto;
 
-    padding: 0 135px;
+    margin: 0 135px;
 }
 .global__section-works-text{
 
@@ -161,7 +160,6 @@
 
     margin-left: 130px;
 
-    background: linear-gradient(120.45deg, #239F4B 44.35%, #347449 100%);
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-works-logo-image{
@@ -181,7 +179,7 @@
 .global__section-portfolio{
     display: grid;
 
-    padding-top: 235px;
+    margin-top: 235px;
 }
 
 /* -------------------- section why -------------------- */
@@ -189,7 +187,24 @@
 .global__section-why{
     display: grid;
 
+    margin-top: 187px;
+}
+.global__section-why-blocks-list{
+    display: flex;
+    justify-content: space-around;
 
+    width: 86%;
+
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+.global__section-why-block-item{
+    width: 22%;
+
+    padding: 55px 64px;
+
+    background-color: #ffffff;
 }
 
 /* -------------------- section services -------------------- */
@@ -197,7 +212,7 @@
 .global__section-services{
     display: grid;
 
-
+    margin: 50px;
 }
 
 /* -------------------- section commercial -------------------- */
@@ -205,7 +220,35 @@
 .global__section-commercial{
     display: grid;
 
+    grid-template-areas: "sc_logo sc_text";
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: auto;
 
+    padding-left: 105px;
+    padding-right: 200px;
+    margin-top: 260px;
+}
+.global__section-commercial-logo{
+    grid-area: sc_logo;
+
+    width: 767px;
+    height: 516px;
+
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.global__section-commercial-logo-image{
+    width: 767px;
+    height: 516px;
+
+    margin-left: 30px;
+    margin-top: -30px;
+
+    background-image: url("../img/big-question.png");
+    background-size: contain;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.global__section-commercial-text{
+    grid-area: sc_text;
 }
 
 /* -------------------- section comments / invisible -------------------- */
@@ -213,15 +256,75 @@
 .global__section-comments{
     display: grid;
 
-
+    padding: 0 170px;
+    margin-top: 160px;
 }
+.global__section-comments-slider{
+    display: flex;
+
+    padding-top: 80px;
+}
+.global__section-comments-slide{
+    display: inline-grid;
+
+    grid-template-areas: "ss-logo ss-name"
+                         "ss-logo ss-type"
+                         "ss-text ss-text";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr auto;
+
+    width: 50%;
+}
+.global__section-comments-slide-logo{
+    grid-area: ss-logo;
+
+    padding-bottom: 60px;
+    padding-right: 40px;
+}
+.global__section-comments-slide-name{
+    grid-area: ss-name;
+
+    margin-bottom: -30px;
+}
+.global__section-comments-slide-type{
+    grid-area: ss-type;
+
+    margin-top: -25px;
+}
+.global__section-comments-slide-text{
+    grid-area: ss-text;
+
+    width: 94%;
+}
+
 
 /* -------------------- section form -------------------- */
 
 .global__section-form{
     display: grid;
 
+    grid-template-areas: "sf-headers sf-headers sf-headers "
+                         "sf-text-1  sf-text-2  sf-form"
+                         "sf-image   sf-image   sf-form";
 
+    padding: 0 170px;
+    margin-top: 140px;
+    margin-bottom: 65px;
+}
+.global__section-form-headers{
+    grid-area: sf-headers;
+}
+.global__section-form-image{
+    grid-area: sf-image;
+
+    width: 788px;
+    height: 325px;
+
+    background-image: url("../img/bg.png");
+    background-size: cover;
+}
+.global__section-form-form{
+    grid-area: sf-form;
 }
 
 /* -------------------- footer -------------------- */

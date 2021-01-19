@@ -3,7 +3,9 @@
 /* -------------------- base -------------------- */
 
 .btn{
-	display: inline-flex;
+	display: inline-block;
+
+	width: max-content;
 
 	font-family: Montserrat, sans-serif;
 	font-style: normal;
@@ -41,11 +43,14 @@
 
 /* -------------------- buttons -------------------- */
 
-.btn-yellow{
-	font-weight: bold;
+.btn-colored{
+	min-width: 250px;
 
 	padding: 18px 25px;
 
+	font-weight: bold;
+}
+.btn-yellow{
 	color: #ffffff;
 	background-color: #ffc300;
 }
@@ -54,10 +59,6 @@
 }
 
 .btn-purple{
-	font-weight: bold;
-
-	padding: 18px 25px;
-
 	color: #ffffff;
 	background: #C86DD7;
 }
@@ -66,8 +67,6 @@
 }
 
 .btn-purple-bordered{
-	font-weight: bold;
-
 	padding: 15px 22px;
 
 	color: #DA9CE4;
@@ -76,4 +75,10 @@
 .btn-link-bordered:hover{
 	color: #ffffff;
 	background: #DA9CE4;
+}
+
+/* -------------------- special -------------------- */
+
+.btn-center{
+	margin: 0 auto;
 }

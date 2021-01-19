@@ -52,3 +52,9 @@
 .text-right{
     text-align: right;
 }
+
+/* -------------------- weight -------------------- */
+
+.text-thin{
+    font-weight: 400;
+}
