@@ -27,3 +27,28 @@
 
 - move code to legacy
 - create new base code
+
+
+## 18.01.2021
+
+*Daniel*
+
+- update design
+
+*Sergo*
+
+- create new methodology of work
+- create base template
+- create css libs
+- add images
+- add font - Montserrat
+- add statistics module
+
+
+## 19.01.2021
+
+*Sergo*
+
+- create css libs
+- add images
+- update template
