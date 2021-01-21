@@ -1,0 +1,34 @@
+/* ------------------------------- page resources ------------------------------- */
+
+/* -------------------- main -------------------- */
+
+.resources__main{
+	padding: 0 40px;
+}
+.resources__main-header{
+	font-size: 3em;
+	margin: 10px 0;
+	border-bottom: 4px solid #ffffff;
+}
+.resources__main-subheader{
+	font-size: 2em;
+	margin: 30px 0;
+	border-bottom: 2px solid #ffffff;
+}
+.resources__main-panel{
+	display: inline-block;
+
+	width: 280px;
+	height: 130px;
+
+	margin-right: 15px;
+	padding: 10px;
+
+	border: 1px solid #ffffff;
+}
+
+/* -------------------- special -------------------- */
+
+a{
+	margin-right: 15px;
+}

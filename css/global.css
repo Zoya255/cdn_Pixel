@@ -327,8 +327,70 @@
     grid-area: sf-form;
 }
 
-/* -------------------- footer -------------------- */
+/* -------------------- footer top -------------------- */
 
-.global__footer{
+.global__footer-top {
+    display: grid;
 
+    grid-template-areas: "info1 info2 info3 socilal";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    padding-left: 225px;
+    padding-right: 140px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+.global__footer-top-social{
+    padding-top: 24px;
+}
+.global__footer-top-social-link{
+    text-decoration: none;
+    padding-right: 20px;
+}
+.global__footer-top-social-icon{
+
+}
+
+/* -------------------- footer line -------------------- */
+
+.global__footer-line{
+    width: 100%;
+
+    margin: 0;
+
+    outline: none;
+    border: none;
+    border-top: 1px solid white;
+    background: none;
+}
+
+/* -------------------- footer bottom -------------------- */
+
+.global__footer-bottom{
+    display: grid;
+
+    grid-template-areas: "info info none copyright";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    padding-left: 225px;
+    padding-right: 140px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.global__footer-bottom-info{
+    grid-area: info;
+}
+.global__footer-bottom-info-item{
+    padding-right: 20px;
+}
+.global__footer-bottom-copyright{
+    grid-area: copyright;
+
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.6;
 }
