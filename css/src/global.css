@@ -86,6 +86,7 @@
     grid-area: sm_text;
 
     margin-top: 150px;
+    margin-right: 100px;
 }
 .global__section-main-horn{
     grid-area: sm_horn;
@@ -119,7 +120,7 @@
     margin-left: 30px;
     margin-top: -30px;
 
-    background-image: url("../../img/pixel-logo.png");
+    background-image: url("../../img/logo-pixel.png");
     background-size: contain;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
@@ -169,7 +170,7 @@
     margin-top: -30px;
     margin-left: -30px;
 
-    background-image: url("../../img/heineken-logo.png");
+    background-image: url("../../img/logo-rbt.png");
     background-size: cover;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
@@ -201,6 +202,10 @@
     line-height: 20px;
 
     opacity: 0.8;
+}
+.global__section-portfolio-slider-image{
+    width: 500px;
+    height: 385px;
 }
 
 /* -------------------- section why -------------------- */
@@ -311,7 +316,7 @@
 /* -------------------- section comments / invisible -------------------- */
 
 .global__section-comments{
-    display: grid;
+    display: none;
 
     padding: 0 170px 70px;
     margin-top: 160px;
