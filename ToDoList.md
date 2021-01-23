@@ -21,7 +21,7 @@
 
 *Project*
 
-- change philosofy of project
+- change philosophy of project
 
 *Sergo*
 
@@ -51,4 +51,22 @@
 
 - create css libs
 - add images
+- update template
+
+
+## 21.01.2021
+
+*Sergo*
+
+- create css lib
+- add images and icons
+- update template
+
+
+## 23.01.2021
+
+*Sergo*
+
+- optimization
+- particle localization
 - update template
