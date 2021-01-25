@@ -132,3 +132,41 @@
 .btn-center{
 	margin: 0 auto;
 }
+
+/* -------------------- price -------------------- */
+
+.btn-price{
+	padding: 10px 20px;
+
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #000000;
+	border: 1px solid #333333;
+}
+.btn-price-white{
+	padding: 10px 20px;
+
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+/* -------------------- contact -------------------- */
+
+.btn-contact{
+	font-size: 18px;
+	line-height: 22px;
+
+	padding: 5px 12px;
+
+	border-radius: 10px;
+
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+.btn-contact-icon{
+	vertical-align: -3px;
+}

@@ -40,6 +40,10 @@
     font-size: 18px;
     line-height: 22px;
 }
+.text-mc{
+    font-size: 16px;
+    line-height: 20px;
+}
 
 /* -------------------- direction -------------------- */
 
@@ -57,4 +61,18 @@
 
 .text-thin{
     font-weight: 400;
+}
+
+/* -------------------- alfa -------------------- */
+
+.text-opacity{
+    opacity: 0.8;
+}
+
+/* -------------------- special -------------------- */
+
+.text-no-link{
+    text-decoration: none;
+
+    color: #ffffff;
 }

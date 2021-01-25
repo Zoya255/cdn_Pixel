@@ -214,6 +214,7 @@
     display: grid;
 
     margin-top: 187px;
+    padding-top: 50px;
 }
 .global__section-why-blocks-list{
     display: flex;
@@ -232,6 +233,12 @@
 
     background-color: #ffffff;
 }
+.global__section-services-slider-item-header{
+    margin-top: 40px;
+}
+.global__section-services-slider-item-text{
+    margin: 40px 76px;
+}
 
 /* -------------------- section services -------------------- */
 
@@ -241,40 +248,18 @@
     margin: 50px;
 }
 .global__section-services-slider{
-    margin: 90px 0;
+    display: flex;
+    justify-content: space-around;
+
+    margin: 70px 0;
 }
 .global__section-services-slider-item{
-    position: relative;
-    display: inline-block;
-
-    width: 450px;
-    height: 345px;
-
-    margin: 0 40px;
-
-    box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.25);
-}
-.global__section-services-slider-item.active{
     width: 500px;
     height: 385px;
 
-    margin: 0 40px;
+    box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.25);
 
-    vertical-align: -20px;
-}
-.global__section-services-slider-image{
-    /* костыль, но иначе не встанет */
-    margin-top: -10px;
-    margin-left: -14px;
-}
-.global__section-services-slider-text{
-    position: absolute;
-
-    padding: 70px;
-
-    line-height: 20px;
-
-    opacity: 0.8;
+    border-radius: 10px;
 }
 
 /* -------------------- section commercial -------------------- */
@@ -366,16 +351,21 @@
 .global__section-form{
     display: grid;
 
-    grid-template-areas: "sf-headers sf-headers sf-headers "
-                         "sf-text-1  sf-text-2  sf-form"
-                         "sf-image   sf-image   sf-form";
+    grid-template-areas: "sf-header    sf-header"
+                         "sf-subheader sf-form"
+                         "sf-image     sf-form";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr auto;
 
     padding: 0 170px;
     margin-top: 140px;
     margin-bottom: 65px;
 }
-.global__section-form-headers{
-    grid-area: sf-headers;
+.global__section-form-header{
+    grid-area: sf-header;
+}
+.global__section-form-subheader{
+    grid-area: sf-subheader;
 }
 .global__section-form-image{
     grid-area: sf-image;
@@ -395,22 +385,20 @@
 .global__footer-top {
     display: grid;
 
-    grid-template-areas: "info1 info2 info3 socilal";
+    grid-template-areas: "ft-nav none ft-contacts";
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 1fr;
 
-    padding: 40px 140px 45px 225px;
+    padding: 40px 135px 45px;
 }
-.global__footer-top-social{
-    padding-top: 24px;
-}
-.global__footer-top-social-link{
-    text-decoration: none;
-    padding-right: 20px;
-}
-.global__footer-top-social-icon{
+.global__footer-top-nav .text-mc{
+    grid-area: ft-nav;
 
+    margin: 13px 0;
+}
+.global__footer-top-contacts{
+    grid-area: ft-contacts;
 }
 
 /* -------------------- footer line -------------------- */
@@ -431,21 +419,22 @@
 .global__footer-bottom{
     display: grid;
 
-    grid-template-areas: "info info none copyright";
+    grid-template-areas: "none fb-inst fb-copyright";
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 
-    padding: 15px 140px 30px 225px;
+    padding: 15px 100px;
 }
-.global__footer-bottom-info{
-    grid-area: info;
-}
-.global__footer-bottom-info-item{
-    padding-right: 20px;
+.global__footer-bottom-inst{
+    grid-area: fb-inst;
+
+    margin: 0 auto;
 }
 .global__footer-bottom-copyright{
-    grid-area: copyright;
+    grid-area: fb-copyright;
+
+    text-align: right;
 
     font-weight: 400;
     font-size: 12px;
