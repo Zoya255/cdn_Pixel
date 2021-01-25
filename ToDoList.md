@@ -70,3 +70,11 @@
 - optimization
 - particle localization
 - update template
+
+
+## 25.01.2021
+
+*Sergo*
+
+- full localization
+- update template
