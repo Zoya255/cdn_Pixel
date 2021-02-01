@@ -1,22 +1,30 @@
-<link rel="stylesheet" href="css/dark.css">
+<link rel="stylesheet" href="css/min/dark.min.css">
 
 <?php
+	/* @var $CONF_UUID       */
+	/* @var $CONF_PROJECT    */
+	/* @var $CONF_PROJECT_ID */
+
 	require "php/lib/stats.php";
 
 
 	$stats = new Stats();
 
+	# ========================== Time Charts ==========================
+
+	# ========================== Click Maps ==========================
+
 	if ( !empty($_GET['clickMap']) ) {
 
-		if ( $_GET['clickMap'] == "full" ) {
-			$clicks = $stats->get_clicks_all();
+		if ( $_GET['clickMap'] == "Full" ) {
+			$clicks = $stats->get_clicks_all( $CONF_PROJECT_ID );
 
 			foreach ($clicks as $click) {
 				print("<div class='dot' style='top: ${click["click_y"]}; left: ${click["click_x"]}'></div>");
 			}
 		}
 		else{
-			$clicks = $stats->get_clicks($_GET['clickMap']);
+			$clicks = $stats->get_clicks( $CONF_PROJECT_ID, $_GET['clickMap'] );
 
 			foreach ($clicks as $click) {
 				print("<div class='dot' style='top: ${click["click_y"]}; left: ${click["click_x"]}'></div>");
@@ -24,86 +32,87 @@
 		}
 
 	}
+
+    # ========================== Requests ==========================
+
 	else if ( !empty($_GET['requests']) ) {
 
-		print("<h1>${_GET['requests']}</h1>");
+		print("<h1>${CONF_PROJECT} / Requests / ${_GET['requests']}</h1>");
 
-		if ( $_GET['requests'] == "full" ) {
+		$sys_names_desk = [ "Windows", "Linux", "Ubuntu", "Mac OS" ];
+		$sys_names_mob  = [ "Android", "iOS" ];
+
+		if ( $_GET['requests'] == "Full" ) {
 			print("<h2>Desktop</h2>");
 
-			print("<h3>Windows</h3>");
-
-			echo $stats->get_requests_all("Windows", "full", true);
-
-			print("<h3>Linux</h3>");
-
-			echo $stats->get_requests_all("Linux x86_64", "full", true);
-
-			print("<h3>Mac OS</h3>");
-
-			echo $stats->get_requests_all("Mac OS", "full", true);
-
+			foreach ($sys_names_desk as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all( $CONF_PROJECT_ID,$sys_name."%", "full", true ));
+			}
 
 			print("<h2>Mobile</h2>");
 
-			print("<h3>Android</h3>");
-
-			echo $stats->get_requests_all("Android", "full", true);
-
-			print("<h3>iOS</h3>");
-
-			echo $stats->get_requests_all("iPhone", "full", true);
+            foreach ($sys_names_mob as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all( $CONF_PROJECT_ID,$sys_name."%", "full", true ));
+            }
 		}
 		else{
-			print("<h2>Desktop</h2>");
+            print("<h2>Desktop</h2>");
 
-			print("<h3>Windows</h3>");
+            foreach ($sys_names_desk as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all( $CONF_PROJECT_ID,$sys_name."%", $_GET['requests'], true ));
+            }
 
-			echo $stats->get_requests_all("Win32", $_GET['requests'], true);
+            print("<h2>Mobile</h2>");
 
-			print("<h3>Linux</h3>");
-
-			echo $stats->get_requests_all("Linux x86_64", $_GET['requests'], true);
-
-
-			print("<h2>Mobile</h2>");
-
-			print("<h3>Android</h3>");
-
-			echo $stats->get_requests_all("Android", $_GET['requests'], true);
-
-			print("<h3>iOS</h3>");
-
-			echo $stats->get_requests_all("iPhone", $_GET['requests'], true);
+            foreach ($sys_names_mob as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all( $CONF_PROJECT_ID,$sys_name."%", $_GET['requests'], true ));
+            }
 		}
 
 	}
+
+    # ========================== Choice ==========================
+
 	else{
+		print("<h1>Project ${CONF_PROJECT}</h1>");
 
-		print("<h1>ClickMaps</h1>");
+		print("<h3>UUID: ${CONF_UUID}</h3>");
+		print("<h3>ID:   ${CONF_PROJECT_ID}</h3>");
 
-		print("<p><a class='btn' href='stats-page.php?clickMap=full'>Full data</a></p>");
+
+        print("<h2>TimeCharts</h2>");
+
+        print("<p><a class='btn' href='stats-page.php?timeCharts=Full'>Future</a></p>");
+
+
+
+		print("<h2>ClickMaps</h2>");
+
+		print("<p><a class='btn' href='stats-page.php?clickMap=Full'>Full data</a></p>");
 
 		print("<hr class='hr-md'>");
 
-		$pages = $stats->get_pages(true);
+		$pages = $stats->get_pages($CONF_PROJECT_ID, true);
 
 		foreach ($pages as $page) {
 			print("<p><a href='stats-page.php?clickMap=${page}'>${page}</a></p>");
 		}
 
 
-		print("<h1>RequestTables</h1>");
+		print("<h2>RequestTables</h2>");
 
-		print("<p><a class='btn' href='stats-page.php?requests=full'>Full data</a></p>");
+		print("<p><a class='btn' href='stats-page.php?requests=Full'>Full data</a></p>");
 
 		print("<hr class='hr-md'>");
 
-		$pages = $stats->get_pages();
+		$pages = $stats->get_pages($CONF_PROJECT_ID);
 
 		foreach ($pages as $page) {
 			print("<p><a href='stats-page.php?requests=${page}'>${page}</a></p>");
 		}
 
 	}
-

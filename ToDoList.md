@@ -78,3 +78,10 @@
 
 - full localization
 - update template
+
+
+## 08.12.2020
+
+*Sergo*
+
+- update module EasySpy to V7

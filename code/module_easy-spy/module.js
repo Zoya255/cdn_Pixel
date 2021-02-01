@@ -1,11 +1,13 @@
 // -------------------------------- //
-//  EASY SPY VERSION 05 - LACIA     //
+//  EASY SPY VERSION 07 - NASTYA    //
 //                                  //
 //  Author: Cet500                  //
-//  Date:   16.12.2020              //
+//  Date:   02.02.2021              //
 // -------------------------------- //
 
 window.onload = function() {
+    console.log("Start EasySpy [ver 07]...")
+
     include("module_easy-spy/js/external/jquery-3.5.1.min.js");
     include("module_easy-spy/js/external/detect.min.js");
     include("module_easy-spy/js/lib/spy.js");
@@ -16,13 +18,13 @@ window.onload = function() {
 }
 
 function start() {
-    let spyData  = new SpyData(true);
+    let spyData  = new SpyData(true, true);
 
     spyData.dump_print();
     spyData.dump_log();
     spyData.ajax();
 
-    let spyClick = new SpyClick(true);
+    let spyClick = new SpyClick(true, true);
 
     spyClick.get_clicks();
 }
