@@ -170,7 +170,7 @@
     margin-top: -30px;
     margin-left: -30px;
 
-    background-image: url("../../img/logo-rbt.png");
+    background-image: url("../../img/logo-rbt-big.jpg");
     background-size: cover;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
@@ -194,14 +194,22 @@
 
     margin: 0 40px 20px;
 }
+.global__section-portfolio-slider-item:hover .global__section-portfolio-slider-image{
+    filter: brightness(0.3)
+}
+.global__section-portfolio-slider-item:hover .global__section-portfolio-slider-text{
+    z-index: 1;
+}
 .global__section-portfolio-slider-text{
     position: absolute;
 
-    padding: 70px;
+    padding: 100px 70px;
 
     line-height: 20px;
 
     opacity: 0.8;
+
+    z-index: -1;
 }
 .global__section-portfolio-slider-image{
     width: 500px;
@@ -215,6 +223,9 @@
 
     margin-top: 187px;
     padding-top: 50px;
+
+    background-image: url("../../img/bg-about-circles.svg");
+    background-size: cover;
 }
 .global__section-why-blocks-list{
     display: flex;
@@ -290,7 +301,7 @@
     margin-left: 30px;
     margin-top: -30px;
 
-    background-image: url("../../img/big-question.png");
+    background-image: url("../../img/walking-billbords.jpg");
     background-size: contain;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
@@ -378,6 +389,15 @@
 }
 .global__section-form-form{
     grid-area: sf-form;
+}
+
+/* -------------------- footer -------------------- */
+
+.global__footer{
+    position: relative;
+
+    background-image: url("../../img/bg-footer-circles.svg");
+    background-size: cover;
 }
 
 /* -------------------- footer top -------------------- */

@@ -18,13 +18,13 @@ window.onload = function() {
 }
 
 function start() {
-    let spyData  = new SpyData(true, true);
+    let spyData  = new SpyData(true, false);
 
     spyData.dump_print();
     spyData.dump_log();
     spyData.ajax();
 
-    let spyClick = new SpyClick(true, true);
+    let spyClick = new SpyClick(true, false);
 
     spyClick.get_clicks();
 }

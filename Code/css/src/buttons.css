@@ -5,8 +5,6 @@
 .btn{
 	display: inline-block;
 
-	width: max-content;
-
 	font-family: Montserrat, sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -15,7 +13,7 @@
 	align-items: center;
 	text-decoration: none;
 
-	border-radius: 32.5px;
+	border-radius: 32px;
 }
 
 /* -------------------- links -------------------- */
@@ -44,7 +42,7 @@
 /* -------------------- buttons -------------------- */
 
 .btn-colored{
-	min-width: 250px;
+	min-width: 200px;
 
 	padding: 18px 25px;
 
@@ -58,9 +56,9 @@
 }
 
 .btn-bordered{
-	min-width: 250px;
+	min-width: 220px;
 
-	padding: 15px 22px;
+	padding: 15px 12px;
 
 	font-weight: bold;
 
@@ -131,6 +129,9 @@
 
 .btn-center{
 	margin: 0 auto;
+}
+.btn-left-indent{
+	margin-left: 40px;
 }
 
 /* -------------------- price -------------------- */
