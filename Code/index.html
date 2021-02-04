@@ -16,22 +16,24 @@
 		<link rel="stylesheet" type="text/css" href="css/min/media.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/colors.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/buttons.min.css">
+		<link rel="stylesheet" type="text/css" href="css/min/buttons-media.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/text.min.css">
+		<link rel="stylesheet" type="text/css" href="css/min/text-media.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/forms.min.css">
+		<link rel="stylesheet" type="text/css" href="css/min/forms-media.min.css">
 
 		<script src="module_easy-spy/module.js"></script>
-		<link rel="stylesheet" href="css/src/global.css">
 	</head>
 
 	<body class="global__body">
-		<a name="main"></a>
+		<a name="main" id="main"></a>
 
 		<header class="global__header color-purple-gradient">
 			<img src="img/logo.png"
 			     alt="logo"
-			     class="global__header-logo">
+			     class="text__logo">
 
-			<h1 class="global__header-logo-text">Pixel</h1>
+			<h1 class="text__logo-text">Pixel</h1>
 
 			<nav class="global__nav">
 				<ul class="global__nav-list">
@@ -80,7 +82,7 @@
 					<h3 class="text text-subheader">Умные решения для<br> роста ваших продаж</h3>
 
 					<p class="text text-md">
-						Обеспечиваем бесперебойную работу промо-персонала, выполняем выполняем проекты любой сложности.
+						Обеспечиваем бесперебойную работу промо-персонала, выполняем проекты любой сложности.
 						Реализуем BTL и промокампании. Решаем спорные вопросы с сетями. Грамотно и прозрачно ведем
 						проекты. Наши клиенты гордятся своими результатами.
 					</p>
@@ -92,11 +94,12 @@
 				</div>
 
 				<div class="global__section-main-horn">
-					<img src="img/horn.svg" alt="horn">
+					<img src="img/horn.svg" alt="horn"
+					     class="global__section-main-horn-image">
 				</div>
 			</section>
 
-			<a name="about"></a>
+			<a name="about" id="about"></a>
 
 			<section class="global__section-about">
 				<div class="global__section-about-logo color-purple">
@@ -126,7 +129,7 @@
 				</div>
 			</section>
 
-			<a name="advantages"></a>
+			<a name="advantages" id="advantages"></a>
 
 			<section class="global__section-advantages text">
 				<div class="global__section-advantages-block text-right">
@@ -162,7 +165,7 @@
 				</div>
 			</section>
 
-			<a name="works"></a>
+			<a name="works" id="works"></a>
 
 			<section class="global__section-works">
 				<div class="global__section-works-text text text-right color-gray-text">
@@ -272,6 +275,7 @@
 
 						<p class="text-sm">
 							Pixel -это команда, которая использует только умные методы воздействия на покупателей.
+							<br>
 							Если нужно все разработать, распланировать, организовать и продать в кратчайшие сроки,
 							это к нам!
 						</p>
@@ -397,7 +401,7 @@
 				</div>
 			</section>
 
-			<a name="form"></a>
+			<a name="form" id="form"></a>
 
 			<section class="global__section-form text">
 				<h2 class="global__section-form-header text-header color-gray-text">
@@ -459,31 +463,43 @@
 		<footer class="global__footer text text-sm color-white-text">
 			<div class="global__footer-top">
 				<div class="global__footer-top-nav">
-					<p class="text-bold">Навигация:</p>
+					<p class="global__footer-top-nav-header text-bold">
+						Навигация:
+					</p>
 
 					<p class="text-mc">
 						<a href="#main" class="text-no-link">Главная</a>
+					</p>
+
+					<p class="text-mc text-left-indent">
+						<a href="#advantages" class="text-no-link">Приемущества</a>
 					</p>
 
 					<p class="text-mc">
 						<a href="#about" class="text-no-link">О нас</a>
 					</p>
 
-					<p class="text-mc">
-						<a href="#advantages" class="text-no-link">Приемущества</a>
-					</p>
-
-					<p class="text-mc">
+					<p class="text-mc text-left-indent">
 						<a href="#works" class="text-no-link">Наши проекты</a>
 					</p>
+				</div>
+
+				<div class="global__footer-top-logo">
+					<img src="img/logo.png"
+					     alt="logo"
+					     class="text__logo">
+
+					<span class="text__logo-text">Pixel</span>
 				</div>
 
 				<div class="global__footer-top-contacts">
 					<p class="text-bold">Звоните</p>
 
-					<p>+7 999 999-99-99</p>
-
-					<p>+7 999 999-99-99</p>
+					<p class="text-md text-thin">
+						<img src="img/icon-phone.png" alt="icon of phone"
+						     class="global__footer-top-contacts-phone-icon">
+						+7 999 999-99-99
+					</p>
 
 					<a href="#form" class="btn btn-contact">
 						<img src="img/icon-email.png" alt="icon of contact"
@@ -496,20 +512,43 @@
 			<hr class="global__footer-line">
 
 			<div class="global__footer-bottom">
-				<div class="global__footer-bottom-inst">
+				<div class="global__footer-bottom-inst text-center">
 					<a href="#">
 						<img src="img/icon-instagram.png"
 						     alt="logo of Instagram"
 						     width="40" height="40">
 					</a>
+
+					<br>
+
+					<span class="text-mc text-nano">Copyright 2020. Все права защищены.</span>
 				</div>
 
-				<div class="global__footer-bottom-copyright">
-					<span>Copyright 2020. Все права защищены.</span>
+				<div class="global__footer-bottom-codeoon">
+					Created by
+					<img src="img/icon-codeoon.svg"
+					     alt="logo of Codeoon">
 				</div>
-
-				<div></div>
 			</div>
 		</footer>
+
+		<!--
+			3rd party script
+			Thanks to Zoya for finding the script
+		-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("a[href*=#]").on("click", function (e) {
+					var anchor = $(this);
+					$('html, body').stop().animate({
+						scrollTop: $(anchor.attr('href')).offset().top
+					}, 1000);
+					e.preventDefault();
+					return false;
+				});
+			});
+		</script>
 	</body>
 </html>

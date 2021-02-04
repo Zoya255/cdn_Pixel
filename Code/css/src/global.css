@@ -3,38 +3,24 @@
 /* -------------------- body -------------------- */
 
 .global__body{
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    min-height: 90vh;
+	min-height: 90vh;
 }
 
 /* -------------------- header -------------------- */
 
 .global__header{
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "logo title nav net";
-    grid-template-columns: auto auto 1fr auto;
-    grid-template-rows: auto;
+	grid-template-areas: "logo title nav net";
+	grid-template-columns: auto auto 1fr auto;
+	grid-template-rows: auto;
 
-    padding: 14px 135px;
-}
-.global__header-logo{
-    width: 40px;
-}
-.global__header-logo-text{
-    display: inline;
+	min-height: 8vh;
 
-    margin: 0;
-
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 44px;
-
-    color: #FFFFFF;
+	padding: 14px 135px;
 }
 
 /* -------------------- nav in header -------------------- */
@@ -43,18 +29,18 @@
 
 }
 .global__nav-list{
-    margin: 0 115px 0 0;
-    padding: 0;
+	margin: 0 115px 0 0;
+	padding: 0;
 
-    text-align: right;
+	text-align: right;
 
-    list-style: none;
+	list-style: none;
 }
 .global__nav-list-item{
-    display: inline-table;
+	display: inline-table;
 
-    padding-left: 18px;
-    line-height: 48px;
+	padding-left: 18px;
+	line-height: 48px;
 }
 .global__nav-list-item-link{
 
@@ -69,394 +55,428 @@
 /* -------------------- section main -------------------- */
 
 .global__section-main{
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "sm_text sm_horn";
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+	grid-template-areas: "sm_text sm_horn";
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
 
-    height: calc(100vh - 79px);
+	min-height: 90vh;
 
-    padding: 0 135px;
-    margin-bottom: 135px;
+	padding: 0 135px;
+	margin-bottom: 135px;
 
-    box-shadow: 0 13px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 13px 10px rgba(0, 0, 0, 0.25);
 }
 .global__section-main-text{
-    grid-area: sm_text;
+	grid-area: sm_text;
 
-    margin-top: 150px;
-    margin-right: 100px;
+	margin-top: 150px;
+	margin-right: 100px;
 }
 .global__section-main-horn{
-    grid-area: sm_horn;
+	grid-area: sm_horn;
 
-    margin-top: 50px;
+	margin-top: 50px;
+}
+.global__section-main-horn-image{
+	width: 600px;
 }
 
 /* -------------------- section about -------------------- */
 
 .global__section-about{
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "sa_logo sa_text";
-    grid-template-columns: 2fr 1.5fr;
-    grid-template-rows: auto;
+	grid-template-areas: "sa_logo sa_text";
+	grid-template-columns: 2fr 1.5fr;
+	grid-template-rows: auto;
 
-    padding: 100px 200px 135px 105px;
+	padding: 100px 200px 135px 105px;
 }
 .global__section-about-logo{
-    width: 767px;
-    height: 516px;
+	grid-area: sa_logo;
 
-    margin-right: 20px;
+	width: 767px;
+	height: 516px;
 
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+	margin-right: 20px;
+
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-about-logo-image{
-    width: 767px;
-    height: 516px;
+	width: 767px;
+	height: 516px;
 
-    margin-left: 30px;
-    margin-top: -30px;
+	margin-left: 30px;
+	margin-top: -30px;
 
-    background-image: url("../../img/logo-pixel.png");
-    background-size: contain;
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+	background-image: url("../../img/logo-pixel.png");
+	background-size: contain;
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.global__section-about-text{
+	grid-area: sa_text;
 }
 
 /* -------------------- section advantages -------------------- */
 
 .global__section-advantages{
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 
-    margin: 0 135px 135px;
-    padding-top: 100px;
+	margin: 0 135px 135px;
+	padding-top: 100px;
 }
 .global__section-advantages-block{
-    display: block;
+	display: block;
 
-    width: 24%;
+	width: 24%;
 }
 
 /* -------------------- section works -------------------- */
 
 .global__section-works{
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "sw_text sw_logo";
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: auto;
+	grid-template-areas: "sw_text sw_logo";
+	grid-template-columns: 1.5fr 1fr;
+	grid-template-rows: auto;
 
-    margin: 0 135px;
-    padding-top: 130px;
+	margin: 0 135px;
+	padding-top: 130px;
 }
 .global__section-works-text{
 
 }
 .global__section-works-logo{
-    width: 767px;
-    height: 516px;
+	width: 767px;
+	height: 516px;
 
-    margin-left: 130px;
+	margin-left: 130px;
 
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-works-logo-image{
-    width: 767px;
-    height: 516px;
+	width: 767px;
+	height: 516px;
 
-    margin-top: -30px;
-    margin-left: -30px;
+	margin-top: -30px;
+	margin-left: -30px;
 
-    background-image: url("../../img/logo-rbt-big.jpg");
-    background-size: cover;
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+	background-image: url("../../img/logo-rbt-big.jpg");
+	background-size: cover;
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* -------------------- section portfolio -------------------- */
 
 .global__section-portfolio{
-    display: grid;
+	display: grid;
 
-    margin-top: 235px;
+	margin-top: 235px;
 }
 .global__section-portfolio-slider{
-    margin: 60px 0 30px;
+	margin: 60px 0 30px;
 }
 .global__section-portfolio-slider-item{
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 
-    width: 500px;
-    height: 385px;
+	width: 500px;
+	height: 385px;
 
-    margin: 0 40px 20px;
+	margin: 0 40px 20px;
 }
 .global__section-portfolio-slider-item:hover .global__section-portfolio-slider-image{
-    filter: brightness(0.3)
+	filter: brightness(0.18)
 }
 .global__section-portfolio-slider-item:hover .global__section-portfolio-slider-text{
-    z-index: 1;
+	z-index: 1;
 }
 .global__section-portfolio-slider-text{
-    position: absolute;
+	position: absolute;
 
-    padding: 100px 70px;
+	padding: 100px 70px;
 
-    line-height: 20px;
+	line-height: 20px;
 
-    opacity: 0.8;
+	opacity: 0.8;
 
-    z-index: -1;
+	z-index: -1;
 }
 .global__section-portfolio-slider-image{
-    width: 500px;
-    height: 385px;
+	width: 500px;
+	height: 385px;
 }
 
 /* -------------------- section why -------------------- */
 
 .global__section-why{
-    display: grid;
+	display: grid;
 
-    margin-top: 187px;
-    padding-top: 50px;
+	margin-top: 187px;
+	padding-top: 50px;
 
-    background-image: url("../../img/bg-about-circles.svg");
-    background-size: cover;
+	background-image: url("../../img/bg-about-circles.svg");
+	background-size: cover;
 }
 .global__section-why-blocks-list{
-    display: flex;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 
-    width: 86%;
+	width: 86%;
 
-    margin: 50px auto 200px;
+	margin: 50px auto 200px;
 }
 .global__section-why-block-item{
-    display: inline-block;
+	display: inline-block;
 
-    width: 22%;
+	width: 22%;
 
-    padding: 55px 64px;
+	padding: 55px 64px;
 
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 .global__section-services-slider-item-header{
-    margin-top: 40px;
+	margin-top: 40px;
 }
 .global__section-services-slider-item-text{
-    margin: 40px 76px;
+	margin: 40px 76px;
 }
 
 /* -------------------- section services -------------------- */
 
 .global__section-services{
-    display: grid;
+	display: grid;
 
-    margin: 50px;
+	margin: 50px;
 }
 .global__section-services-slider{
-    display: flex;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 
-    margin: 70px 0;
+	margin: 70px 0;
 }
 .global__section-services-slider-item{
-    width: 500px;
-    height: 385px;
+	width: 30%;
 
-    box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.25);
 
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 /* -------------------- section commercial -------------------- */
 
 .global__section-commercial{
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "sc_logo sc_text";
-    grid-template-columns: 2fr 1.5fr;
-    grid-template-rows: auto;
+	grid-template-areas: "sc_logo sc_text";
+	grid-template-columns: 2fr 1.5fr;
+	grid-template-rows: auto;
 
-    padding-left: 105px;
-    padding-right: 200px;
-    margin-top: 260px;
+	padding-left: 105px;
+	padding-right: 200px;
+	margin-top: 260px;
 }
 .global__section-commercial-logo{
-    grid-area: sc_logo;
+	grid-area: sc_logo;
 
-    width: 767px;
-    height: 516px;
+	width: 767px;
+	height: 516px;
 
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+	margin-right: 20px;
+
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-commercial-logo-image{
-    width: 767px;
-    height: 516px;
+	width: 767px;
+	height: 516px;
 
-    margin-left: 30px;
-    margin-top: -30px;
+	margin-left: 30px;
+	margin-top: -30px;
 
-    background-image: url("../../img/walking-billbords.jpg");
-    background-size: contain;
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
+	background-image: url("../../img/walking-billbords.jpg");
+	background-size: contain;
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-commercial-text{
-    grid-area: sc_text;
+	grid-area: sc_text;
 }
 
 /* -------------------- section comments / invisible -------------------- */
 
 .global__section-comments{
-    display: none;
+	display: none;
 
-    padding: 0 170px 70px;
-    margin-top: 160px;
+	padding: 0 170px 70px;
+	margin-top: 160px;
 }
 .global__section-comments-slider{
-    display: flex;
+	display: flex;
 
-    padding-top: 80px;
-    margin-bottom: 140px;
+	padding-top: 80px;
+	margin-bottom: 140px;
 }
 .global__section-comments-slide{
-    display: inline-grid;
+	display: inline-grid;
 
-    grid-template-areas: "ss-logo ss-name"
+	grid-template-areas: "ss-logo ss-name"
                          "ss-logo ss-type"
                          "ss-text ss-text";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr 1fr auto;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr 1fr auto;
 
-    width: 50%;
+	width: 50%;
 }
 .global__section-comments-slide-logo{
-    grid-area: ss-logo;
+	grid-area: ss-logo;
 
-    padding-bottom: 60px;
-    padding-right: 40px;
+	padding-bottom: 60px;
+	padding-right: 40px;
 }
 .global__section-comments-slide-name{
-    grid-area: ss-name;
+	grid-area: ss-name;
 
-    margin-bottom: -30px;
+	margin-bottom: -30px;
 }
 .global__section-comments-slide-type{
-    grid-area: ss-type;
+	grid-area: ss-type;
 
-    margin-top: -25px;
+	margin-top: -25px;
 }
 .global__section-comments-slide-text{
-    grid-area: ss-text;
+	grid-area: ss-text;
 
-    width: 94%;
+	width: 94%;
 }
 
 
 /* -------------------- section form -------------------- */
 
 .global__section-form{
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "sf-header    sf-header"
+	grid-template-areas: "sf-header    sf-header"
                          "sf-subheader sf-form"
                          "sf-image     sf-form";
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 1fr auto;
 
-    padding: 0 170px;
-    margin-top: 140px;
-    margin-bottom: 65px;
+	padding: 0 170px;
+	margin-top: 140px;
+	margin-bottom: 65px;
 }
 .global__section-form-header{
-    grid-area: sf-header;
+	grid-area: sf-header;
 }
 .global__section-form-subheader{
-    grid-area: sf-subheader;
+	grid-area: sf-subheader;
 }
 .global__section-form-image{
-    grid-area: sf-image;
+	grid-area: sf-image;
 
-    width: 788px;
-    height: 325px;
+	width: 788px;
+	height: 325px;
 
-    background-image: url("../../img/bg.png");
-    background-size: cover;
+	background-image: url("../../img/bg.png");
+	background-size: cover;
 }
 .global__section-form-form{
-    grid-area: sf-form;
+	grid-area: sf-form;
 }
 
 /* -------------------- footer -------------------- */
 
 .global__footer{
-    position: relative;
+	position: relative;
 
-    background-image: url("../../img/bg-footer-circles.svg");
-    background-size: cover;
+	background-image: url("../../img/bg-footer-circles.svg");
+	background-size: cover;
 }
 
 /* -------------------- footer top -------------------- */
 
 .global__footer-top {
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "ft-nav none ft-contacts";
+	grid-template-areas: "ft-nav ft-logo ft-contacts";
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 1fr;
 
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: 1fr;
+	width: max-content;
 
-    padding: 40px 135px 45px;
+	padding: 40px 0 10px;
+	margin: 0 auto;
 }
-.global__footer-top-nav .text-mc{
-    grid-area: ft-nav;
+.global__footer-top-nav{
+	grid-area: ft-nav;
 
-    margin: 13px 0;
+	display: grid;
+
+	grid-template-areas: "ftn-header ftn-header"
+                         "ftn-sell-1 ftn-sell-2"
+                         "ftn-sell-3 ftn-sell-4";
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+}
+.global__footer-top-nav *{
+	margin: 0;
+}
+.global__footer-top-nav-header{
+	grid-area: ftn-header;
+}
+.global__footer-top-logo{
+	margin: 10px 120px;
 }
 .global__footer-top-contacts{
-    grid-area: ft-contacts;
+	grid-area: ft-contacts;
+}
+.global__footer-top-contacts .text-bold{
+	margin: 0;
+}
+.global__footer-top-contacts .text-md{
+	margin: 10px 0;
+}
+.global__footer-top-contacts-phone-icon{
+	vertical-align: -4px;
 }
 
 /* -------------------- footer line -------------------- */
 
 .global__footer-line{
-    width: 100%;
+	width: 100%;
 
-    margin: 0;
+	margin: 0;
 
-    outline: none;
-    border: none;
-    border-top: 1px solid white;
-    background: none;
+	outline: none;
+	border: none;
+	border-top: 1px solid white;
+	background: none;
 }
 
 /* -------------------- footer bottom -------------------- */
 
 .global__footer-bottom{
-    display: grid;
+	display: grid;
 
-    grid-template-areas: "none fb-inst fb-copyright";
+	grid-template-areas: "none fb-inst fb-copyright";
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1.55fr 1fr;
+	grid-template-rows: 1fr;
 
-    padding: 15px 100px;
+	width: max-content;
+
+	margin: 0 auto;
+	padding: 15px 100px;
 }
 .global__footer-bottom-inst{
-    grid-area: fb-inst;
+	grid-area: fb-inst;
 
-    margin: 0 auto;
+	margin: 0 auto;
 }
-.global__footer-bottom-copyright{
-    grid-area: fb-copyright;
+.global__footer-bottom-codeoon{
+	grid-area: fb-copyright;
 
-    text-align: right;
-
-    font-weight: 400;
-    font-size: 12px;
-    opacity: 0.6;
+	margin-top: 30px;
 }

@@ -8,6 +8,25 @@
     font-weight: normal;
 }
 
+/* -------------------- logo -------------------- */
+
+.text__logo{
+    width: 40px;
+}
+.text__logo-text{
+    display: inline;
+
+    margin: 0;
+
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+
 /* -------------------- headers -------------------- */
 
 .text-subheader{
@@ -30,7 +49,6 @@
     line-height: 29px;
     font-weight: bold;
 }
-
 .text-md{
     font-size: 24px;
     line-height: 29px;
@@ -43,6 +61,10 @@
 .text-mc{
     font-size: 16px;
     line-height: 20px;
+}
+.text-nano{
+    font-size: 12px;
+    line-height: 15px;
 }
 
 /* -------------------- direction -------------------- */
@@ -65,14 +87,29 @@
 
 /* -------------------- alfa -------------------- */
 
-.text-opacity{
+.text-opacity-8{
     opacity: 0.8;
+}
+.text-opacity-6{
+    opacity: 0.6;
+}
+.text-opacity-4{
+    opacity: 0.4;
 }
 
 /* -------------------- special -------------------- */
 
+.text-block{
+    display: block;
+}
+.text-inline{
+    display: inline-block;
+}
 .text-no-link{
     text-decoration: none;
 
     color: #ffffff;
+}
+.text-left-indent{
+    margin-left: 20px;
 }

@@ -1,0 +1,155 @@
+/* ------------------------------- text media ------------------------------- */
+
+/* -------------------- headers -------------------- */
+
+@media screen and (min-width: 1900px) {
+
+	.text-subheader {
+		font-size: 64px;
+		line-height: 78px;
+		font-weight: bold;
+	}
+
+	.text-header {
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: bold;
+	}
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1900px) {
+
+	.text-subheader {
+		font-size: 54px;
+		line-height: 60px;
+		font-weight: bold;
+	}
+
+	.text-header {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: bold;
+	}
+
+}
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+
+	.text-subheader {
+		font-size: 46px;
+		line-height: 56px;
+		font-weight: bold;
+	}
+
+	.text-header {
+		font-size: 17px;
+		line-height: 21px;
+		font-weight: bold;
+	}
+
+}
+@media screen and (min-width: 1020px) and (max-width: 1300px) {
+
+	.text-subheader {
+		font-size: 40px;
+		line-height: 50px;
+		font-weight: bold;
+	}
+
+	.text-header {
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: bold;
+	}
+
+}
+
+/* -------------------- typography -------------------- */
+
+@media screen and (min-width: 1900px) {
+
+	.text-bold{
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: bold;
+	}
+	.text-md{
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: 500;
+	}
+	.text-sm{
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.text-mc{
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1900px) {
+
+	.text-bold{
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: bold;
+	}
+	.text-md{
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+	.text-sm{
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.text-mc{
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+}
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+
+	.text-bold{
+		font-size: 17px;
+		line-height: 21px;
+		font-weight: bold;
+	}
+	.text-md{
+		font-size: 17px;
+		line-height: 21px;
+		font-weight: 500;
+	}
+	.text-sm{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.text-mc{
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+}
+@media screen and (min-width: 1020px) and (max-width: 1300px) {
+
+	.text-bold{
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: bold;
+	}
+	.text-md{
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: 500;
+	}
+	.text-sm{
+		font-size: 11px;
+		line-height: 16px;
+	}
+	.text-mc{
+		font-size: 10px;
+		line-height: 15px;
+	}
+
+}

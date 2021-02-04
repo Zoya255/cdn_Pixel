@@ -1,0 +1,99 @@
+/* ------------------------------- button media ------------------------------- */
+
+/* -------------------- base -------------------- */
+
+@media screen and (min-width: 1900px) {
+
+    .btn{
+        font-size: 24px;
+
+        border-radius: 32px;
+    }
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1900px) {
+
+    .btn{
+        font-size: 20px;
+
+        border-radius: 28px;
+    }
+
+}
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+
+    .btn{
+        font-size: 17px;
+
+        border-radius: 23px;
+    }
+
+}
+@media screen and (min-width: 1020px) and (max-width: 1300px) {
+
+    .btn{
+        font-size: 16px;
+
+        border-radius: 21px;
+    }
+
+}
+
+/* -------------------- buttons -------------------- */
+
+@media screen and (min-width: 1900px) {
+
+    .btn-colored{
+        min-width: 200px; /* 200 + 25 + 25 = 250 */
+
+        padding: 18px 25px;
+    }
+    .btn-bordered{
+        min-width: 220px; /* 220 + 12 + 3 + 12 + 3 = 250 */
+
+        padding: 15px 12px;
+    }
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1900px) {
+
+    .btn-colored{
+        min-width: 180px; /* 180 + 20 + 20 = 220 */
+
+        padding: 16px 20px;
+    }
+    .btn-bordered{
+        min-width: 200px; /* 200 + 7 + 3 + 7 + 3 = 220 */
+
+        padding: 13px 7px;
+    }
+
+}
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+
+    .btn-colored{
+        min-width: 150px; /* 150 + 15 + 15 = 180 */
+
+        padding: 14px 15px;
+    }
+    .btn-bordered{
+        min-width: 170px;  /* 170 + 2 + 3 + 2 + 3 = 180 */
+
+        padding: 11px 2px;
+    }
+
+}
+@media screen and (min-width: 1020px) and (max-width: 1300px) {
+
+    .btn-colored{
+        min-width: 140px; /* 140 + 10 + 10 = 160 */
+
+        padding: 12px 10px;
+    }
+    .btn-bordered{
+        min-width: 150px;  /* 150 + 2 + 3 + 2 + 3 = 160 */
+
+        padding: 9px 2px;
+    }
+
+}
