@@ -22,6 +22,9 @@
 
 	padding: 14px 135px;
 }
+.global__header-btn-burger{
+	display: none;
+}
 
 /* -------------------- nav in header -------------------- */
 
