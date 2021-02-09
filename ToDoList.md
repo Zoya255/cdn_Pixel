@@ -94,3 +94,29 @@
 - fix template
 - update template
 - add images
+
+
+## 04.02.2020
+
+*Sergo*
+
+- add adaptive
+- fixes code
+- add smooth scroling
+- large update of template
+- add localization
+
+
+## 08.02.2020
+
+*Sergo*
+
+- add base mobile css
+
+
+## 09.02.2020
+
+*Sergo*
+
+- update text
+- fixes bugs
