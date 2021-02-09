@@ -127,6 +127,7 @@
 
 .global__section-advantages{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 
 	margin: 0 135px 135px;
@@ -136,6 +137,15 @@
 	display: block;
 
 	width: 25%;
+}
+.global__section-advantages-block:nth-child(1){
+	text-align: right;
+}
+.global__section-advantages-block:nth-child(2){
+	text-align: center;
+}
+.global__section-advantages-block:nth-child(3){
+	text-align: left;
 }
 
 /* -------------------- section works -------------------- */
@@ -151,9 +161,13 @@
 	padding-top: 130px;
 }
 .global__section-works-text{
+	grid-area: sw_text;
 
+	text-align: right;
 }
 .global__section-works-logo{
+	grid-area: sw_logo;
+
 	width: 767px;
 	height: 516px;
 
@@ -181,16 +195,20 @@
 	margin-top: 235px;
 }
 .global__section-portfolio-slider{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
 	margin: 60px 0 30px;
 }
 .global__section-portfolio-slider-item{
 	position: relative;
-	display: inline-block;
+	display: block;
 
 	width: 500px;
 	height: 385px;
 
-	margin: 0 40px 20px;
+	margin: 0 36px 20px;
 }
 .global__section-portfolio-slider-item:hover .global__section-portfolio-slider-image{
 	filter: brightness(0.18)
@@ -228,6 +246,7 @@
 }
 .global__section-why-blocks-list{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 
 	width: 86%;
@@ -257,6 +276,7 @@
 }
 .global__section-services-slider{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 
 	margin: 70px 0;
@@ -379,7 +399,7 @@
 	grid-template-areas: "sf-header    sf-header"
                          "sf-subheader sf-form"
                          "sf-image     sf-form";
-	grid-template-rows: auto auto auto auto;
+	grid-template-rows: auto auto auto;
 	grid-template-columns: 1fr auto;
 
 	padding: 0 170px;

@@ -2,7 +2,7 @@
 
 /* -------------------- header -------------------- */
 
-@media screen and (min-width: 900px) and (max-width: 1020px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
 
 	.global__header{
 		padding: 45px 100px;
@@ -23,7 +23,7 @@
 
 /* -------------------- section main -------------------- */
 
-@media screen and (min-width: 900px) and (max-width: 1020px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
 
 	.global__section-main{
 		display: inline-block;
@@ -32,6 +32,118 @@
 	}
 	.global__section-main-text{
 		position: absolute;
+
+		text-align: center;
 	}
+
 }
 
+/* -------------------- section about -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__section-about{
+		grid-template-areas: "sa_logo"
+							 "sa_text";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+	.global__section-about-text{
+		text-align: center;
+	}
+	.global__section-about-btn-works{
+		display: none !important;
+	}
+
+}
+
+/* -------------------- section advantages -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__section-advantages{
+		flex-direction: column;
+	}
+
+	.global__section-advantages-block{
+		width: 100%;
+
+		text-align: center !important;
+	}
+
+}
+
+/* -------------------- section works -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__section-works{
+		grid-template-areas: "sw_logo"
+							 "sw_text";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+	.global__section-works-text{
+		text-align: center;
+	}
+	.global__section-works-logo{
+		margin-left: 0;
+	}
+
+}
+
+/* -------------------- section why -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__section-why-blocks-list{
+		flex-direction: column;
+	}
+	.global__section-why-block-item{
+		width: 80%;
+	}
+
+}
+
+/* -------------------- section services -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__section-services-slider{
+		flex-direction: column;
+	}
+	.global__section-services-slider-item{
+		width: 100%;
+	}
+
+}
+
+/* -------------------- section commercial -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__section-commercial{
+		grid-template-areas: "sc_logo"
+							 "sc_text";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+
+}
+
+/* -------------------- section form -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__section-form{
+		grid-template-areas: "sf-header"
+							 "sf-subheader"
+                             "sf-form";
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: 1fr;
+	}
+	.global__section-form-image{
+		display: none;
+	}
+
+}
