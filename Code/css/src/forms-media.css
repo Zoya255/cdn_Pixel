@@ -2,7 +2,7 @@
 
 /* -------------------- inputs -------------------- */
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1860px) {
 
 	.form-input-text{
 		font-size: 24px;
@@ -18,7 +18,7 @@
 	}
 
 }
-@media screen and (min-width: 1600px) and (max-width: 1900px) {
+@media screen and (min-width: 1600px) and (max-width: 1860px) {
 
 	.form-input-text{
 		font-size: 20px;

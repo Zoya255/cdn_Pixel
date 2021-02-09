@@ -2,7 +2,7 @@
 
 /* -------------------- headers -------------------- */
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1860px) {
 
 	.text-subheader {
 		font-size: 64px;
@@ -17,7 +17,7 @@
 	}
 
 }
-@media screen and (min-width: 1600px) and (max-width: 1900px) {
+@media screen and (min-width: 1600px) and (max-width: 1860px) {
 
 	.text-subheader {
 		font-size: 54px;
@@ -65,7 +65,7 @@
 
 /* -------------------- typography -------------------- */
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1860px) {
 
 	.text-bold{
 		font-size: 24px;
@@ -87,7 +87,7 @@
 	}
 
 }
-@media screen and (min-width: 1600px) and (max-width: 1900px) {
+@media screen and (min-width: 1600px) and (max-width: 1860px) {
 
 	.text-bold{
 		font-size: 20px;

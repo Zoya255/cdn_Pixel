@@ -74,13 +74,14 @@
 .global__section-main-text{
 	grid-area: sm_text;
 
-	margin-top: 150px;
-	margin-right: 100px;
+	margin: auto;
+
+	max-width: 934px;
 }
 .global__section-main-horn{
 	grid-area: sm_horn;
 
-	margin-top: 50px;
+	margin: auto;
 }
 .global__section-main-horn-image{
 	width: 600px;
@@ -134,7 +135,7 @@
 .global__section-advantages-block{
 	display: block;
 
-	width: 24%;
+	width: 25%;
 }
 
 /* -------------------- section works -------------------- */
@@ -221,6 +222,7 @@
 	margin-top: 187px;
 	padding-top: 50px;
 
+	box-shadow: 0 13px 10px rgba(0, 0, 0, 0.25);
 	background-image: url("../../img/bg-about-circles.svg");
 	background-size: cover;
 }
@@ -251,8 +253,6 @@
 /* -------------------- section services -------------------- */
 
 .global__section-services{
-	display: grid;
-
 	margin: 50px;
 }
 .global__section-services-slider{
@@ -262,11 +262,27 @@
 	margin: 70px 0;
 }
 .global__section-services-slider-item{
+	display: flex;
+	flex-direction: column;
+
 	width: 30%;
 
 	box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.25);
 
 	border-radius: 10px;
+}
+.global__section-services-slider-item-header{
+	flex: 0 0 auto;
+}
+.global__section-services-slider-item-text{
+	flex: 1 0 auto;
+}
+.global__section-services-slider-item-btn{
+	flex: 0 0 auto;
+
+	width: max-content;
+
+	margin: 0 auto 24px;
 }
 
 /* -------------------- section commercial -------------------- */
@@ -393,25 +409,21 @@
 
 .global__footer{
 	position: relative;
+	display: grid;
 
+	grid-template-areas: "none1   ft-nav  ft-logo ft-contacts  none2"
+						 "gf-line gf-line gf-line gf-line      gf-line"
+						 "none3   none4   fb-inst fb-copyright none5";
+	grid-template-columns: 1fr auto auto auto 1fr;
+	grid-template-rows: 1fr auto auto;
+
+	box-shadow: 0 -13px 10px rgba(0, 0, 0, 0.25);
 	background-image: url("../../img/bg-footer-circles.svg");
 	background-size: cover;
 }
 
 /* -------------------- footer top -------------------- */
 
-.global__footer-top {
-	display: grid;
-
-	grid-template-areas: "ft-nav ft-logo ft-contacts";
-	grid-template-columns: auto auto auto;
-	grid-template-rows: 1fr;
-
-	width: max-content;
-
-	padding: 40px 0 10px;
-	margin: 0 auto;
-}
 .global__footer-top-nav{
 	grid-area: ft-nav;
 
@@ -422,6 +434,8 @@
                          "ftn-sell-3 ftn-sell-4";
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto;
+
+	padding: 40px 0 10px;
 }
 .global__footer-top-nav *{
 	margin: 0;
@@ -430,10 +444,15 @@
 	grid-area: ftn-header;
 }
 .global__footer-top-logo{
+	grid-area: ft-logo;
+
 	margin: 10px 120px;
+	padding: 40px 0 10px;
 }
 .global__footer-top-contacts{
 	grid-area: ft-contacts;
+
+	padding: 40px 0 10px;
 }
 .global__footer-top-contacts .text-bold{
 	margin: 0;
@@ -448,6 +467,8 @@
 /* -------------------- footer line -------------------- */
 
 .global__footer-line{
+	grid-area: gf-line;
+
 	width: 100%;
 
 	margin: 0;
@@ -460,26 +481,18 @@
 
 /* -------------------- footer bottom -------------------- */
 
-.global__footer-bottom{
-	display: grid;
-
-	grid-template-areas: "none fb-inst fb-copyright";
-
-	grid-template-columns: 1fr 1.55fr 1fr;
-	grid-template-rows: 1fr;
-
-	width: max-content;
-
-	margin: 0 auto;
-	padding: 15px 100px;
-}
 .global__footer-bottom-inst{
 	grid-area: fb-inst;
 
 	margin: 0 auto;
+	padding: 15px 0;
 }
 .global__footer-bottom-codeoon{
 	grid-area: fb-copyright;
 
-	margin-top: 30px;
+	position: absolute;
+
+	bottom: 0;
+
+	padding: 10px 0;
 }
