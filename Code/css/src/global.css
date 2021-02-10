@@ -101,23 +101,10 @@
 .global__section-about-logo{
 	grid-area: sa_logo;
 
-	width: 767px;
-	height: 516px;
-
 	margin-right: 20px;
-
-	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-about-logo-image{
-	width: 767px;
-	height: 516px;
-
-	margin-left: 30px;
-	margin-top: -30px;
-
 	background-image: url("../../img/logo-pixel.png");
-	background-size: contain;
-	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-about-text{
 	grid-area: sa_text;
@@ -168,23 +155,10 @@
 .global__section-works-logo{
 	grid-area: sw_logo;
 
-	width: 767px;
-	height: 516px;
-
 	margin-left: 130px;
-
-	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-works-logo-image{
-	width: 767px;
-	height: 516px;
-
-	margin-top: -30px;
-	margin-left: -30px;
-
 	background-image: url("../../img/logo-rbt-big.jpg");
-	background-size: cover;
-	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* -------------------- section portfolio -------------------- */
@@ -203,7 +177,11 @@
 }
 .global__section-portfolio-slider-item{
 	position: relative;
-	display: block;
+	display: flex;
+
+	align-content: center;
+	justify-content: center;
+	align-items: center;
 
 	width: 500px;
 	height: 385px;
@@ -219,7 +197,7 @@
 .global__section-portfolio-slider-text{
 	position: absolute;
 
-	padding: 100px 70px;
+	width: 80%;
 
 	line-height: 20px;
 
@@ -242,7 +220,7 @@
 
 	box-shadow: 0 13px 10px rgba(0, 0, 0, 0.25);
 	background-image: url("../../img/bg-about-circles.svg");
-	background-size: cover;
+
 }
 .global__section-why-blocks-list{
 	display: flex;
@@ -321,23 +299,10 @@
 .global__section-commercial-logo{
 	grid-area: sc_logo;
 
-	width: 767px;
-	height: 516px;
-
 	margin-right: 20px;
-
-	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-commercial-logo-image{
-	width: 767px;
-	height: 516px;
-
-	margin-left: 30px;
-	margin-top: -30px;
-
 	background-image: url("../../img/walking-billbords.jpg");
-	background-size: contain;
-	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.25);
 }
 .global__section-commercial-text{
 	grid-area: sc_text;

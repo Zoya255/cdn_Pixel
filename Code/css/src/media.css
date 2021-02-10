@@ -185,36 +185,14 @@
 
 		padding: 100px 200px 135px 105px;
 	}
-	.global__section-about-logo{
-		width: 767px;
-		height: 516px;
-	}
-	.global__section-about-logo-image{
-		width: 767px;
-		height: 516px;
-
-		margin-left: 30px;
-		margin-top: -30px;
-	}
 
 }
-@media screen and (min-width: 170px) and (max-width: 1860px) {
+@media screen and (min-width: 1700px) and (max-width: 1860px) {
 
 	.global__section-about{
 		grid-template-columns: 2fr 1.7fr;
 
 		padding: 100px 170px 135px 105px;
-	}
-	.global__section-about-logo{
-		width: 668px;
-		height: 449px;
-	}
-	.global__section-about-logo-image{
-		width: 668px;
-		height: 449px;
-
-		margin-left: 28px;
-		margin-top: -28px;
 	}
 
 }
@@ -225,17 +203,6 @@
 
 		padding: 100px 145px 135px 105px;
 	}
-	.global__section-about-logo{
-		width: 598px;
-		height: 402px;
-	}
-	.global__section-about-logo-image{
-		width: 598px;
-		height: 402px;
-
-		margin-left: 26px;
-		margin-top: -26px;
-	}
 
 }
 @media screen and (min-width: 1300px) and (max-width: 1500px) {
@@ -244,17 +211,6 @@
 		grid-template-columns: 2fr 1.9fr;
 
 		padding: 100px 120px 135px 100px;
-	}
-	.global__section-about-logo{
-		width: 544px;
-		height: 367px;
-	}
-	.global__section-about-logo-image{
-		width: 544px;
-		height: 366px;
-
-		margin-left: 24px;
-		margin-top: -24px;
 	}
 
 }
@@ -265,17 +221,6 @@
 
 		padding: 100px 70px 135px 90px;
 	}
-	.global__section-about-logo{
-		width: 409px;
-		height: 275px;
-	}
-	.global__section-about-logo-image{
-		width: 409px;
-		height: 275px;
-
-		margin-left: 18px;
-		margin-top: -18px;
-	}
 
 }
 @media screen and (min-width: 900px) and (max-width: 1020px) {
@@ -285,19 +230,12 @@
 
 		padding: 100px 70px 120px 90px;
 	}
-	.global__section-about-logo{
-		width: 370px;
-		height: 250px;
-	}
-	.global__section-about-logo-image{
-		width: 370px;
-		height: 250px;
-
-		margin-left: 16px;
-		margin-top: -16px;
-	}
 
 }
+
+/* -------------------- section advantages -------------------- */
+
+
 
 /* -------------------- section works -------------------- */
 
@@ -309,17 +247,7 @@
 		margin: 0 135px;
 	}
 	.global__section-works-logo{
-		width: 767px;
-		height: 516px;
-
 		margin-left: 130px;
-	}
-	.global__section-works-logo-image{
-		width: 767px;
-		height: 516px;
-
-		margin-top: -30px;
-		margin-left: -30px;
 	}
 
 }
@@ -331,17 +259,7 @@
 		margin: 0 135px;
 	}
 	.global__section-works-logo{
-		width: 668px;
-		height: 449px;
-
 		margin-left: 110px;
-	}
-	.global__section-works-logo-image{
-		width: 668px;
-		height: 449px;
-
-		margin-left: 28px;
-		margin-top: -28px;
 	}
 
 }
@@ -353,17 +271,7 @@
 		margin: 0 135px;
 	}
 	.global__section-works-logo{
-		width: 598px;
-		height: 402px;
-
 		margin-left: 90px;
-	}
-	.global__section-works-logo-image{
-		width: 598px;
-		height: 402px;
-
-		margin-left: 26px;
-		margin-top: -26px;
 	}
 
 }
@@ -375,17 +283,7 @@
 		margin: 0 135px;
 	}
 	.global__section-works-logo{
-		width: 544px;
-		height: 367px;
-
 		margin-left: 90px;
-	}
-	.global__section-works-logo-image{
-		width: 544px;
-		height: 366px;
-
-		margin-left: 24px;
-		margin-top: -24px;
 	}
 
 }
@@ -397,17 +295,7 @@
 		margin: 0 115px;
 	}
 	.global__section-works-logo{
-		width: 409px;
-		height: 275px;
-
 		margin-left: 70px;
-	}
-	.global__section-works-logo-image{
-		width: 409px;
-		height: 275px;
-
-		margin-left: 18px;
-		margin-top: -18px;
 	}
 
 }
@@ -419,17 +307,7 @@
 		margin: 0 115px;
 	}
 	.global__section-works-logo{
-		width: 370px;
-		height: 250px;
-
 		margin-left: 50px;
-	}
-	.global__section-works-logo-image{
-		width: 370px;
-		height: 250px;
-
-		margin-left: 16px;
-		margin-top: -16px;
 	}
 
 }
@@ -447,6 +325,9 @@
 	.global__section-portfolio-slider-image{
 		width: 500px;
 		height: 385px;
+	}
+	.global__section-portfolio-slider-text{
+
 	}
 
 }
@@ -490,6 +371,9 @@
 		width: 356px;
 		height: 254px;
 	}
+	.global__section-portfolio-slider-text{
+
+	}
 
 }
 @media screen and (min-width: 1020px) and (max-width: 1300px) {
@@ -531,17 +415,7 @@
 		padding-left: 105px;
 		padding-right: 200px;
 	}
-	.global__section-commercial-logo{
-		width: 767px;
-		height: 516px;
-	}
-	.global__section-commercial-logo-image{
-		width: 767px;
-		height: 516px;
 
-		margin-top: -30px;
-		margin-left: 30px;
-	}
 }
 @media screen and (min-width: 1700px) and (max-width: 1860px) {
 
@@ -550,17 +424,6 @@
 
 		padding-left: 105px;
 		padding-right: 170px;
-	}
-	.global__section-commercial-logo{
-		width: 668px;
-		height: 449px;
-	}
-	.global__section-commercial-logo-image{
-		width: 668px;
-		height: 449px;
-
-		margin-left: 28px;
-		margin-top: -28px;
 	}
 
 }
@@ -572,17 +435,6 @@
 		padding-left: 105px;
 		padding-right: 150px;
 	}
-	.global__section-commercial-logo{
-		width: 598px;
-		height: 402px;
-	}
-	.global__section-commercial-logo-image{
-		width: 598px;
-		height: 402px;
-
-		margin-left: 26px;
-		margin-top: -26px;
-	}
 
 }
 @media screen and (min-width: 1300px)  and (max-width: 1500px) {
@@ -593,17 +445,6 @@
 		padding-left: 90px;
 		padding-right: 80px;
 	}
-	.global__section-commercial-logo{
-		width: 544px;
-		height: 367px;
-	}
-	.global__section-commercial-logo-image{
-		width: 544px;
-		height: 366px;
-
-		margin-left: 24px;
-		margin-top: -24px;
-	}
 
 }
 @media screen and (min-width: 1020px) and (max-width: 1300px) {
@@ -613,17 +454,6 @@
 
 		padding-left: 80px;
 		padding-right: 80px;
-	}
-	.global__section-commercial-logo{
-		width: 409px;
-		height: 275px;
-	}
-	.global__section-commercial-logo-image{
-		width: 409px;
-		height: 275px;
-
-		margin-left: 18px;
-		margin-top: -18px;
 	}
 
 }
