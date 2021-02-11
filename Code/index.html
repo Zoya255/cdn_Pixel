@@ -39,7 +39,7 @@
 	</head>
 
 	<body class="global__body">
-		<a name="main" id="main"></a>
+		<a id="main"></a>
 
 		<header class="global__header color-purple-gradient">
 			<img src="img/logo.png"
@@ -116,7 +116,7 @@
 				</div>
 			</section>
 
-			<a name="about" id="about"></a>
+			<a id="about"></a>
 
 			<section class="global__section-about">
 				<div class="global__section-about-logo image-section color-purple">
@@ -148,7 +148,7 @@
 				</div>
 			</section>
 
-			<a name="advantages" id="advantages"></a>
+			<a id="advantages"></a>
 
 			<section class="global__section-advantages text">
 				<div class="global__section-advantages-block">
@@ -184,7 +184,7 @@
 				</div>
 			</section>
 
-			<a name="works" id="works"></a>
+			<a id="works"></a>
 
 			<section class="global__section-works">
 				<div class="global__section-works-text text color-gray-text">
@@ -421,7 +421,7 @@
 				</div>
 			</section>
 
-			<a name="form" id="form"></a>
+			<a id="form"></a>
 
 			<section class="global__section-form text">
 				<h2 class="global__section-form-header text-header color-gray-text">
@@ -514,7 +514,7 @@
 			<div class="global__footer-top-contacts">
 				<p class="text-bold">Звоните</p>
 
-				<p class="text-md text-thin">
+				<p class="global__footer-top-contacts-phone text-md text-thin">
 					<img src="img/icon-phone.png" alt="icon of phone"
 					     class="global__footer-top-contacts-phone-icon">
 					+7 999 999-99-99
@@ -556,7 +556,7 @@
 		<script>
 			$(document).ready(function () {
 				$("a[href*=#]").on("click", function (e) {
-					var anchor = $(this);
+					let anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $(anchor.attr('href')).offset().top
 					}, 1000);

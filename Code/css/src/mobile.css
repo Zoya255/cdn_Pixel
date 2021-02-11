@@ -28,12 +28,18 @@
 	.global__section-main{
 		display: inline-block;
 		position: relative;
+
 		width: 100%;
+
+		padding: 0;
 	}
 	.global__section-main-text{
 		position: absolute;
 
 		text-align: center;
+	}
+	.global__section-main-horn{
+		width: 70%;
 	}
 
 }
@@ -89,6 +95,9 @@
 	.global__section-works-logo{
 		margin-left: 0;
 	}
+	.global__section-portfolio-slider{
+		flex-direction: column;
+	}
 
 }
 
@@ -98,9 +107,14 @@
 
 	.global__section-why-blocks-list{
 		flex-direction: column;
+
+		width: 55%;
 	}
 	.global__section-why-block-item{
-		width: 80%;
+		width: calc(100% - 110px);
+
+		margin-bottom: 40px;
+		padding: 35px 55px;
 	}
 
 }
@@ -144,6 +158,29 @@
 	}
 	.global__section-form-image{
 		display: none;
+	}
+
+}
+
+/* -------------------- footer -------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+	.global__footer{
+		grid-template-areas: "ft-nav fb-inst      ft-contacts"
+							 "none1  fb-copyright none2";
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto auto;
+	}
+	.global__footer-top-logo{
+		display: none;
+	}
+	.global__footer-line{
+		display: none;
+	}
+	.global__footer-top-contacts-phone{
+		font-size: 16px !important;
+		line-height: 18px;
 	}
 
 }

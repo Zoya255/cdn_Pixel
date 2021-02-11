@@ -417,7 +417,7 @@
 	grid-template-areas: "ftn-header ftn-header"
                          "ftn-sell-1 ftn-sell-2"
                          "ftn-sell-3 ftn-sell-4";
-	grid-template-columns: auto;
+	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto;
 
 	padding: 40px 0 10px;
