@@ -143,3 +143,10 @@
 *Sergo*
 
 - allow follow and index of site
+
+
+## 13.02.2020
+
+*Sergo*
+
+- big update mobile adaptive
