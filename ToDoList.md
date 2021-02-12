@@ -120,3 +120,26 @@
 
 - update text
 - fixes bugs
+
+
+## 10.02.2020
+
+*Sergo*
+
+- update adaptive
+- add robots.txt
+- add sitemap.xml
+
+
+## 11.02.2020
+
+*Sergo*
+
+- update mobile adaptive
+
+
+## 12.02.2020
+
+*Sergo*
+
+- allow follow and index of site
