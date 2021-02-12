@@ -42,6 +42,8 @@
 	.image-section{
 		width: 422px;
 		height: 284px;
+
+		margin: 0 auto 60px;
 	}
 	.image-section-img{
 		width: 422px;
@@ -57,6 +59,8 @@
 	.image-section{
 		width: 340px;
 		height: 229px;
+
+		margin: 0 auto 50px;
 	}
 	.image-section-img{
 		width: 340px;
@@ -72,6 +76,8 @@
 	.image-section{
 		width: 263px;
 		height: 177px;
+
+		margin: 0 auto 40px;
 	}
 	.image-section-img{
 		width: 263px;
@@ -87,6 +93,8 @@
 	.image-section{
 		width: 176px;
 		height: 118px;
+
+		margin: 0 auto 30px;
 	}
 	.image-section-img{
 		width: 176px;

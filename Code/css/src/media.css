@@ -233,10 +233,6 @@
 
 }
 
-/* -------------------- section advantages -------------------- */
-
-
-
 /* -------------------- section works -------------------- */
 
 @media screen and (min-width: 1860px) {
@@ -325,9 +321,6 @@
 	.global__section-portfolio-slider-image{
 		width: 500px;
 		height: 385px;
-	}
-	.global__section-portfolio-slider-text{
-
 	}
 
 }
@@ -481,6 +474,25 @@
 	.global__section-form-image{
 		width: 420px;
 		height: 173px;
+	}
+
+}
+@media screen and (min-width: 900px) and (max-width: 1020px) {
+
+	.global__section-form{
+		grid-template-areas: "sf-header"
+							 "sf-subheader"
+                             "sf-form";
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 1fr;
+
+		padding: 0 100px;
+	}
+	.global__section-form-image{
+		display: none;
+	}
+	.global__section-form{
+		text-align: center;
 	}
 
 }

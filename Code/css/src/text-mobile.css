@@ -7,12 +7,10 @@
 	.text-subheader {
 		font-size: 60px;
 		line-height: 73px;
-		font-weight: bold;
 	}
 	.text-header {
 		font-size: 22px;
 		line-height: 27px;
-		font-weight: bold;
 	}
 
 }
@@ -21,12 +19,10 @@
 	.text-subheader {
 		font-size: 45px;
 		line-height: 60px;
-		font-weight: bold;
 	}
 	.text-header {
 		font-size: 18px;
 		line-height: 23px;
-		font-weight: bold;
 	}
 
 }
@@ -35,12 +31,10 @@
 	.text-subheader {
 		font-size: 37px;
 		line-height: 46px;
-		font-weight: bold;
 	}
 	.text-header {
 		font-size: 14px;
 		line-height: 17px;
-		font-weight: bold;
 	}
 
 }
@@ -49,12 +43,10 @@
 	.text-subheader {
 		font-size: 25px;
 		line-height: 30px;
-		font-weight: bold;
 	}
 	.text-header {
 		font-size: 12px;
 		line-height: 14px;
-		font-weight: bold;
 	}
 
 }
@@ -66,16 +58,18 @@
 	.text-bold{
 		font-size: 22px;
 		line-height: 27px;
-		font-weight: bold;
 	}
 	.text-md{
 		font-size: 22px;
 		line-height: 27px;
-		font-weight: 500;
 	}
 	.text-sm{
 		font-size: 16px;
 		line-height: 20px;
+	}
+	.text-mc{
+		font-size: 14px;
+		line-height: 17px;
 	}
 
 }
@@ -84,16 +78,18 @@
 	.text-bold{
 		font-size: 18px;
 		line-height: 23px;
-		font-weight: bold;
 	}
 	.text-md{
 		font-size: 18px;
 		line-height: 23px;
-		font-weight: 500;
 	}
 	.text-sm{
 		font-size: 14px;
 		line-height: 17px;
+	}
+	.text-mc{
+		font-size: 12px;
+		line-height: 15px;
 	}
 
 }
@@ -102,16 +98,18 @@
 	.text-bold{
 		font-size: 14px;
 		line-height: 23px;
-		font-weight: bold;
 	}
 	.text-md{
 		font-size: 14px;
 		line-height: 23px;
-		font-weight: 500;
 	}
 	.text-sm{
 		font-size: 12px;
 		line-height: 15px;
+	}
+	.text-mc{
+		font-size: 10px;
+		line-height: 12px;
 	}
 
 }
@@ -120,14 +118,16 @@
 	.text-bold{
 		font-size: 12px;
 		line-height: 14px;
-		font-weight: bold;
 	}
 	.text-md{
 		font-size: 12px;
 		line-height: 14px;
-		font-weight: 500;
 	}
 	.text-sm{
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.text-mc{
 		font-size: 10px;
 		line-height: 12px;
 	}
@@ -136,7 +136,7 @@
 
 /* -------------------- special -------------------- */
 
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
 	.text-left-indent{
 		margin-left: 0;

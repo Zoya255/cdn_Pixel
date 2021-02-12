@@ -156,6 +156,61 @@
 	.btn-contact {
 		font-size: 16px;
 		line-height: 20px;
+
+		padding: 5px 12px;
+	}
+	.btn-contact-icon{
+		width: 18px;
+	}
+
+}
+@media screen and (min-width: 550px) and (max-width: 700px) {
+
+	.btn-contact {
+		font-size: 14px;
+		line-height: 16px;
+
+		padding: 5px 10px;
+	}
+	.btn-contact-icon{
+		width: 16px;
+	}
+
+}
+@media screen and (min-width: 400px) and (max-width: 550px) {
+
+	.btn-contact {
+		font-size: 12px;
+		line-height: 14px;
+
+		padding: 4px 8px;
+	}
+	.btn-contact-icon{
+		width: 14px;
+	}
+
+}
+@media screen and (max-width: 400px) {
+
+	.btn-contact {
+		font-size: 10px;
+		line-height: 12px;
+
+		padding: 4px 8px;
+	}
+	.btn-contact-icon{
+		width: 12px;
+	}
+
+
+}
+
+/* -------------------- special -------------------- */
+
+@media screen and (max-width: 900px) {
+
+	.btn-left-indent{
+		margin-left: 0;
 	}
 
 }

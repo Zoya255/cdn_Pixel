@@ -134,8 +134,6 @@
 @media screen and (min-width: 1860px) {
 
 	.btn-price{
-		padding: 10px 20px;
-
 		font-size: 16px;
 		line-height: 20px;
 	}
@@ -144,8 +142,6 @@
 @media screen and (min-width: 1600px) and (max-width: 1860px) {
 
 	.btn-price{
-		padding: 10px 20px;
-
 		font-size: 14px;
 		line-height: 17px;
 	}
@@ -154,8 +150,6 @@
 @media screen and (min-width: 1300px) and (max-width: 1600px) {
 
 	.btn-price{
-		padding: 10px 20px;
-
 		font-size: 12px;
 		line-height: 14px;
 	}
@@ -164,8 +158,6 @@
 @media screen and (min-width: 900px) and (max-width: 1300px) {
 
 	.btn-price{
-		padding: 10px 20px;
-
 		font-size: 10px;
 		line-height: 12px;
 	}

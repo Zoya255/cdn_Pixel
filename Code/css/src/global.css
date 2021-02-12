@@ -28,9 +28,6 @@
 
 /* -------------------- nav in header -------------------- */
 
-.global__nav{
-
-}
 .global__nav-list{
 	margin: 0 115px 0 0;
 	padding: 0;
@@ -46,12 +43,6 @@
 	line-height: 48px;
 }
 .global__nav-list-item-link{
-
-}
-
-/* -------------------- main -------------------- */
-
-.global__main{
 
 }
 
@@ -220,6 +211,7 @@
 
 	box-shadow: 0 13px 10px rgba(0, 0, 0, 0.25);
 	background-image: url("../../img/bg-about-circles.svg");
+	background-size: cover;
 
 }
 .global__section-why-blocks-list{
@@ -239,12 +231,6 @@
 	padding: 55px 64px;
 
 	background-color: #ffffff;
-}
-.global__section-services-slider-item-header{
-	margin-top: 40px;
-}
-.global__section-services-slider-item-text{
-	margin: 40px 76px;
 }
 
 /* -------------------- section services -------------------- */
@@ -271,9 +257,13 @@
 }
 .global__section-services-slider-item-header{
 	flex: 0 0 auto;
+
+	margin-top: 40px;
 }
 .global__section-services-slider-item-text{
 	flex: 1 0 auto;
+
+	margin: 40px 76px;
 }
 .global__section-services-slider-item-btn{
 	flex: 0 0 auto;
