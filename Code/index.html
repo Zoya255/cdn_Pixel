@@ -35,7 +35,9 @@
 		<link rel="stylesheet" type="text/css" href="css/min/forms-media.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/forms-mobile.min.css">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="module_easy-spy/module.js"></script>
+		<script src="module_easy-ajax/module.js"></script>
 	</head>
 
 	<body class="global__body">
@@ -434,49 +436,43 @@
 
 				<div class="global__section-form-image"></div>
 
-				<div class="global__section-form-form">
+				<form class='global__section-form-form form'>
 					<p class="text-bold color-gray-text">
 						Мы свяжемся с вами в ближайшее время
 					</p>
 
-					<label class="form-label">
+					<input type='hidden' class='form-input-id' name='id' value='0'>
+
+					<label class='form-label'>
 						Имя
 						<br>
-						<input type="text"
-						       class="form-input form-input-text"
-						       placeholder="Как вас зовут?"
-						       id="script__form-name">
+						<input type='text' name='name' class='form-input form-input-text'
+						       placeholder='Как вас зовут?' maxlength=60 required >
 					</label>
 
-					<label class="form-label">
+					<label class='form-label'>
 						Ваш телефон
 						<br>
-						<input type="text"
-						       class="form-input form-input-text"
-						       placeholder="Введите ваш номер телефона"
-						       id="script__form-tel">
+						<input type='tel' name='phone' class='form-input form-input-text'
+						       placeholder='Введите ваш номер телефона' required >
 					</label>
 
-					<label class="form-label">
+					<label class='form-label'>
 						Электронная почта
 						<br>
-						<input type="text"
-						       class="form-input form-input-text"
-						       placeholder="Введите ваш email"
-						       id="script__form-email">
+						<input type='email' name='email' class='form-input form-input-text'
+						       placeholder='Введите ваш email' maxlength=100 required >
 					</label>
 
-					<label class="form-label">
+					<label class='form-label'>
 						Расскажите о вашей задаче
 						<br>
-						<input type="text"
-						       class="form-input form-input-text"
-						       placeholder="Введите сообщение"
-						       id="script__form-text">
+						<input type='text' name='task' class='form-input form-input-text'
+						       placeholder='Введите сообщение' maxlength=200 required >
 					</label>
 
-					<input type="submit" class="form-input-submit btn btn-colored btn-purple">
-				</div>
+					<input type='submit' class="form-input-submit btn btn-colored btn-purple">
+				</form>
 			</section>
 		</main>
 
@@ -552,7 +548,6 @@
 			Thanks to Zoya for finding the script
 		-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script>
 			$(document).ready(function () {
 				$("a[href*=#]").on("click", function (e) {

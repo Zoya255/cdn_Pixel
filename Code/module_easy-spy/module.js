@@ -5,7 +5,7 @@
 //  Date:   02.02.2021              //
 // -------------------------------- //
 
-window.onload = function() {
+$(document).ready(function() {
     console.log("Start EasySpy [ver 07]...")
 
     include("module_easy-spy/js/external/jquery-3.5.1.min.js");
@@ -15,7 +15,7 @@ window.onload = function() {
     include("module_easy-spy/js/lib/spy-click.js");
 
     setTimeout(() => { start() }, 1500);
-}
+})
 
 function start() {
     let spyData  = new SpyData(true, false);
