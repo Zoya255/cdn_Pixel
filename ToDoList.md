@@ -150,3 +150,10 @@
 *Sergo*
 
 - big update mobile adaptive
+
+
+## 19.02.2020
+
+*Sergo*
+
+- add module EasyAjax V2
