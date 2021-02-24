@@ -12,6 +12,7 @@
 /* -------------------- header -------------------- */
 
 .global__header{
+	position: relative;
 	display: grid;
 
 	grid-template-areas: "logo title nav net";

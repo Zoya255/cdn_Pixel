@@ -35,7 +35,11 @@
 		<link rel="stylesheet" type="text/css" href="css/min/forms-media.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/forms-mobile.min.css">
 
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 		<script src="module_easy-spy/module.js"></script>
 		<script src="module_easy-ajax/module.js"></script>
 	</head>
@@ -88,9 +92,15 @@
 				Связаться с нами
 			</a>
 
-			<img src="img/icon-burger.svg"
-			     alt="Icon on burger"
-				 class="global__header-btn-burger">
+			<div class="global__header-btn-burger">
+				<span></span>
+			</div>
+
+			<script>
+				$('.global__header-btn-burger').click(function(event) {
+					$('.global__header-btn-burger').toggleClass('active');
+				});
+			</script>
 		</header>
 
 		<main class="global__main">

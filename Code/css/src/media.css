@@ -80,14 +80,6 @@
 	.global__nav-list{
 		display: none;
 	}
-	.global__header-btn-link{
-		display: none !important;
-	}
-	.global__header-btn-burger{
-		display: block;
-
-		margin: 9px 0;
-	}
 
 }
 
