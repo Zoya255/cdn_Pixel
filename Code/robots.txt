@@ -4,4 +4,5 @@ Disallow: /module_easy-spy/
 Disallow: /webstat/
 Disallow: /cdn/
 Disallow: /dev/
+Disallow: /update/
 Sitemap: http://pixel27.ru/sitemap.xml

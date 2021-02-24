@@ -8,6 +8,9 @@
 
 	min-height: 90vh;
 }
+.global__body.active{
+	overflow: hidden;
+}
 
 /* -------------------- header -------------------- */
 
@@ -25,6 +28,28 @@
 }
 .global__header-btn-burger{
 	display: none;
+}
+
+/* -------------------- burger -------------------- */
+
+.global__burger{
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 10;
+
+	text-align: center;
+
+	background-color: #2f9751;
+
+	opacity: 0;
+	visibility: hidden;
+
 }
 
 /* -------------------- nav in header -------------------- */
@@ -194,8 +219,9 @@
 	line-height: 20px;
 
 	opacity: 0.8;
-
 	z-index: -1;
+
+	color: #ffffff;
 }
 .global__section-portfolio-slider-image{
 	width: 500px;
@@ -213,21 +239,20 @@
 	box-shadow: 0 13px 10px rgba(0, 0, 0, 0.25);
 	background-image: url("../../img/bg-about-circles.svg");
 	background-size: cover;
-
 }
 .global__section-why-blocks-list{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 
-	width: 86%;
+	width: 88%;
 
 	margin: 50px auto 200px;
 }
 .global__section-why-block-item{
 	display: inline-block;
 
-	width: 22%;
+	width: 23%;
 
 	padding: 55px 64px;
 

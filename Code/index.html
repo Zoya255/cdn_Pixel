@@ -95,16 +95,64 @@
 			<img src="img/icon-burger.svg"
 			     alt="Icon on burger"
 			     class="global__header-btn-burger">
-
-			<script>
-				$('.global__header-btn-burger').click(function(event) {
-					$('.global__header-btn-burger').toggleClass('active');
-				});
-			</script>
 		</header>
 
+		<div class="global__burger color-purple-gradient color-white-text text">
+			<img src="img/logo.png"
+			     alt="logo"
+			     class="global__burger-logo text__logo">
+
+			<h1 class="global__burger-logo-text text__logo-text">Pixel</h1>
+
+			<p class="global__burger-text">Навигация:</p>
+
+			<ul class="global__burger-list">
+				<li class="global__burger-list-item">
+					<a href="#main"
+					   class="global__burger-list-item-link btn btn-link">
+						Главная
+					</a>
+				</li>
+
+				<li class="global__burger-list-item">
+					<a href="#about"
+					   class="global__burger-list-item-link btn btn-link">
+						О нас
+					</a>
+				</li>
+
+				<li class="global__burger-list-item">
+					<a href="#advantages"
+					   class="global__burger-list-item-link btn btn-link">
+						Приемущества
+					</a>
+				</li>
+
+				<li class="global__burger-list-item">
+					<a href="#works"
+					   class="global__burger-list-item-link btn btn-link">
+						Наши проекты
+					</a>
+				</li>
+			</ul>
+
+			<br>
+			<a href="#form"
+			   class="global__burger-btn btn btn-link-bordered"
+			   style="display: inline-table; margin-top: 5px;">
+				Связаться с нами
+			</a>
+			<br>
+			<img src="img/icon-create-by-codeoon.svg"
+			     alt="logo of Codeoon">
+			<br>
+			<span class="text-nano">Copyright 2020. Все права защищены.</span>
+
+			<script src="js/min/burger.min.js"></script>
+		</div>
+
 		<main class="global__main">
-			<section class="global__section-main color-purple-gradient color-white-text">
+			<section class="global__section-main color-purple-gradient color-white-text hide">
 				<div class="global__section-main-text">
 					<h2 class="text text-header">BTL-агенство Pixel</h2>
 
@@ -226,7 +274,7 @@
 
 				<div class="global__section-portfolio-slider">
 					<div class="global__section-portfolio-slider-item">
-						<p class="global__section-portfolio-slider-text text-mc text-opacity color-white-text">
+						<p class="global__section-portfolio-slider-text text-mc text-opacity">
 							Субботник Heineken. Heineken за экологичное отношение к природе, здоровый отдых и
 							корпоративные мероприятия соответствуют их культуре. На субботнике сотрудники собрали
 							мусор, очистив территорию озера Рица, а также прошли занимательный квест, получив
@@ -238,7 +286,7 @@
 					</div>
 
 					<div class="global__section-portfolio-slider-item">
-						<p class="global__section-portfolio-slider-text text-mc text-opacity color-white-text">
+						<p class="global__section-portfolio-slider-text text-mc text-opacity">
 							Beauty-направление. Регулярны для нашего города промо-активности с целью презентации нового
 							продукта в beauty-секторе. Ароматы? Декоративная косметика? Клиентские дни? Наш персонал
 							справится со всем.
@@ -249,7 +297,7 @@
 					</div>
 
 					<div class="global__section-portfolio-slider-item">
-						<p class="global__section-portfolio-slider-text text-mc text-opacity color-white-text">
+						<p class="global__section-portfolio-slider-text text-mc text-opacity">
 							Проект «RBT.RU». Механика: праздничное открытие магазина с участием хостес, промо-персонала
 							для раздачи листовок и шаров, звуковой рекламы на брендированном автомобиле.
 						</p>

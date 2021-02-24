@@ -390,6 +390,114 @@
 
 }
 
+/* -------------------- section why -------------------- */
+
+@media screen and (min-width: 1860px) {
+
+	.global__section-why-blocks-list{
+		margin: 55px auto 200px;
+	}
+	.global__section-why-block-item{
+		padding: 45px 64px;
+	}
+
+}
+@media screen and (min-width: 1700px) and (max-width: 1860px) {
+
+	.global__section-why-blocks-list{
+		margin: 50px auto 185px;
+	}
+	.global__section-why-block-item{
+		padding: 35px 58px;
+	}
+
+}
+@media screen and (min-width: 1500px) and (max-width: 1700px) {
+
+	.global__section-why-blocks-list{
+		margin: 45px auto 165px;
+	}
+	.global__section-why-block-item{
+		padding: 30px 50px;
+	}
+
+}
+@media screen and (min-width: 1300px)  and (max-width: 1500px) {
+
+	.global__section-why-blocks-list{
+		margin: 40px auto 150px;
+	}
+	.global__section-why-block-item{
+		padding: 28px 44px;
+	}
+
+}
+@media screen and (min-width: 1020px) and (max-width: 1300px) {
+
+	.global__section-why-blocks-list{
+		margin: 30px auto 115px;
+	}
+	.global__section-why-block-item{
+		padding: 22px 34px;
+	}
+
+}
+@media screen and (min-width: 900px) and (max-width: 1020px) {
+
+	.global__section-why-blocks-list{
+		margin: 30px auto 100px;
+	}
+	.global__section-why-block-item{
+		padding: 21px 30px;
+	}
+
+}
+
+/* -------------------- section services -------------------- */
+
+@media screen and (min-width: 1860px) {
+
+	.global__section-services-slider-item-text{
+		margin: 40px 76px;
+	}
+
+}
+@media screen and (min-width: 1700px) and (max-width: 1860px) {
+
+	.global__section-services-slider-item-text{
+		margin: 40px 65px;
+	}
+
+}
+@media screen and (min-width: 1500px) and (max-width: 1700px) {
+
+	.global__section-services-slider-item-text{
+		margin: 40px 55px;
+	}
+
+}
+@media screen and (min-width: 1300px)  and (max-width: 1500px) {
+
+	.global__section-services-slider-item-text{
+		margin: 40px 45px;
+	}
+
+}
+@media screen and (min-width: 1020px) and (max-width: 1300px) {
+
+	.global__section-services-slider-item-text{
+		margin: 40px 35px;
+	}
+
+}
+@media screen and (min-width: 900px) and (max-width: 1020px) {
+
+	.global__section-services-slider-item-text{
+		margin: 40px 30px;
+	}
+
+}
+
 /* -------------------- section commercial -------------------- */
 
 @media screen and (min-width: 1860px) {
