@@ -22,9 +22,9 @@
 	grid-template-columns: auto auto 1fr auto;
 	grid-template-rows: auto;
 
-	min-height: 8vh;
+	min-height: 6vh;
 
-	padding: 14px 135px;
+	padding: 14px 135px 0;
 }
 .global__header-btn-burger{
 	display: none;
@@ -81,7 +81,7 @@
 	grid-template-columns: auto auto;
 	grid-template-rows: auto;
 
-	min-height: 90vh;
+	min-height: 93vh;
 
 	padding: 0 135px;
 	margin-bottom: 135px;
@@ -107,24 +107,15 @@
 /* -------------------- section about -------------------- */
 
 .global__section-about{
-	display: grid;
-
-	grid-template-areas: "sa_logo sa_text";
-	grid-template-columns: 2fr 1.5fr;
-	grid-template-rows: auto;
+	display: flex;
 
 	padding: 100px 200px 135px 105px;
 }
 .global__section-about-logo{
-	grid-area: sa_logo;
 
-	margin-right: 20px;
-}
-.global__section-about-logo-image{
-	background-image: url("../../img/logo-pixel.png");
 }
 .global__section-about-text{
-	grid-area: sa_text;
+
 }
 
 /* -------------------- section advantages -------------------- */
@@ -155,27 +146,16 @@
 /* -------------------- section works -------------------- */
 
 .global__section-works{
-	display: grid;
-
-	grid-template-areas: "sw_text sw_logo";
-	grid-template-columns: 1.5fr 1fr;
-	grid-template-rows: auto;
+	display: flex;
 
 	margin: 0 135px;
 	padding-top: 130px;
 }
 .global__section-works-text{
-	grid-area: sw_text;
-
 	text-align: right;
 }
 .global__section-works-logo{
-	grid-area: sw_logo;
 
-	margin-left: 130px;
-}
-.global__section-works-logo-image{
-	background-image: url("../../img/logo-rbt-big.jpg");
 }
 
 /* -------------------- section portfolio -------------------- */
@@ -302,26 +282,17 @@
 /* -------------------- section commercial -------------------- */
 
 .global__section-commercial{
-	display: grid;
-
-	grid-template-areas: "sc_logo sc_text";
-	grid-template-columns: 2fr 1.5fr;
-	grid-template-rows: auto;
+	display: flex;
 
 	padding-left: 105px;
 	padding-right: 200px;
 	margin-top: 260px;
 }
 .global__section-commercial-logo{
-	grid-area: sc_logo;
 
-	margin-right: 20px;
-}
-.global__section-commercial-logo-image{
-	background-image: url("../../img/walking-billbords.jpg");
 }
 .global__section-commercial-text{
-	grid-area: sc_text;
+
 }
 
 /* -------------------- section comments / invisible -------------------- */

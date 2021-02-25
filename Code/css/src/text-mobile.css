@@ -139,6 +139,13 @@
 @media screen and (max-width: 900px) {
 
 	.text-left-indent{
+		margin-left: 10px;
+	}
+
+}
+@media screen and (min-width: 550px)  and (max-width: 700px) {
+
+	.text-left-indent{
 		margin-left: 0;
 	}
 

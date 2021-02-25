@@ -37,18 +37,25 @@
 
 /* -------------------- images -------------------- */
 
+@media screen and (max-width: 900px) {
+
+	.image-section {
+		width: 60vw;
+		height: auto;
+	}
+	.image-section-img {
+		width: 60vw;
+		height: auto;
+	}
+
+}
+
 @media screen and (min-width: 700px) and (max-width: 900px) {
 
 	.image-section{
-		width: 422px;
-		height: 284px;
-
 		margin: 0 auto 60px;
 	}
 	.image-section-img{
-		width: 422px;
-		height: 284px;
-
 		margin-left: 18px;
 		margin-top: -18px;
 	}
@@ -57,15 +64,9 @@
 @media screen and (min-width: 550px) and (max-width: 700px) {
 
 	.image-section{
-		width: 340px;
-		height: 229px;
-
 		margin: 0 auto 50px;
 	}
 	.image-section-img{
-		width: 340px;
-		height: 229px;
-
 		margin-left: 15px;
 		margin-top: -15px;
 	}
@@ -74,15 +75,9 @@
 @media screen and (min-width: 400px) and (max-width: 550px) {
 
 	.image-section{
-		width: 263px;
-		height: 177px;
-
 		margin: 0 auto 40px;
 	}
 	.image-section-img{
-		width: 263px;
-		height: 177px;
-
 		margin-left: 12px;
 		margin-top: -12px;
 	}
@@ -91,17 +86,24 @@
 @media screen and (max-width: 400px) {
 
 	.image-section{
-		width: 176px;
-		height: 118px;
-
 		margin: 0 auto 30px;
 	}
 	.image-section-img{
-		width: 176px;
-		height: 118px;
-
 		margin-left: 8px;
 		margin-top: -8px;
+	}
+
+}
+
+/* -------------------- indents -------------------- */
+
+@media screen and (max-width: 900px) {
+
+	.image-indent-left{
+		margin-left: auto;
+	}
+	.image-indent-right{
+		margin-right: auto;
 	}
 
 }

@@ -5,7 +5,7 @@
 @media screen and (min-width: 1860px) {
 
 	.global__header{
-		padding: 14px 135px;
+		padding: 14px 135px 0;
 	}
 	.global__nav-list{
 		margin: 0 115px 0 0;
@@ -15,7 +15,7 @@
 @media screen and (min-width: 1800px) and (max-width: 1860px) {
 
 	.global__header{
-		padding: 14px 130px;
+		padding: 14px 130px 0;
 	}
 	.global__nav-list{
 		margin: 0 110px 0 0;
@@ -25,7 +25,7 @@
 @media screen and (min-width: 1700px) and (max-width: 1800px) {
 
 	.global__header{
-		padding: 14px 125px;
+		padding: 14px 125px 0;
 	}
 	.global__nav-list{
 		margin: 0 105px 0 0;
@@ -35,7 +35,7 @@
 @media screen and (min-width: 1600px) and (max-width: 1700px) {
 
 	.global__header{
-		padding: 14px 120px;
+		padding: 14px 120px 0;
 	}
 	.global__nav-list{
 		margin: 0 95px 0 0;
@@ -45,7 +45,7 @@
 @media screen and (min-width: 1500px) and (max-width: 1600px){
 
 	.global__header{
-		padding: 14px 115px;
+		padding: 14px 115px 0;
 	}
 	.global__nav-list{
 		margin: 0 85px 0 0;
@@ -55,7 +55,7 @@
 @media screen and (min-width: 1300px) and (max-width: 1500px) {
 
 	.global__header{
-		padding: 14px 100px;
+		padding: 14px 100px 0;
 	}
 	.global__nav-list{
 		margin: 0 70px 0 0;
@@ -65,7 +65,7 @@
 @media screen and (min-width: 1020px) and (max-width: 1300px) {
 
 	.global__header{
-		padding: 14px 90px;
+		padding: 14px 90px 0;
 	}
 	.global__nav-list{
 		margin: 0 50px 0 0;
@@ -173,8 +173,6 @@
 @media screen and (min-width: 1860px) {
 
 	.global__section-about{
-		grid-template-columns: 2fr 1.5fr;
-
 		padding: 100px 200px 135px 105px;
 	}
 
@@ -182,8 +180,6 @@
 @media screen and (min-width: 1700px) and (max-width: 1860px) {
 
 	.global__section-about{
-		grid-template-columns: 2fr 1.7fr;
-
 		padding: 100px 170px 135px 105px;
 	}
 
@@ -191,8 +187,6 @@
 @media screen and (min-width: 1500px) and (max-width: 1700px) {
 
 	.global__section-about{
-		grid-template-columns: 2fr 1.8fr;
-
 		padding: 100px 145px 135px 105px;
 	}
 
@@ -200,8 +194,6 @@
 @media screen and (min-width: 1300px) and (max-width: 1500px) {
 
 	.global__section-about{
-		grid-template-columns: 2fr 1.9fr;
-
 		padding: 100px 120px 135px 100px;
 	}
 
@@ -209,18 +201,14 @@
 @media screen and (min-width: 1020px) and (max-width: 1300px) {
 
 	.global__section-about{
-		grid-template-columns: 2fr 1.9fr;
-
-		padding: 100px 70px 135px 90px;
+		padding: 100px 60px 135px 60px;
 	}
 
 }
 @media screen and (min-width: 900px) and (max-width: 1020px) {
 
 	.global__section-about{
-		grid-template-columns: 2fr 1.9fr;
-
-		padding: 100px 70px 120px 90px;
+		padding: 100px 50px 120px 50px;
 	}
 
 }
@@ -230,72 +218,42 @@
 @media screen and (min-width: 1860px) {
 
 	.global__section-works{
-		grid-template-columns: 1.5fr 1fr;
-
 		margin: 0 135px;
-	}
-	.global__section-works-logo{
-		margin-left: 130px;
 	}
 
 }
 @media screen and (min-width: 1700px) and (max-width: 1860px) {
 
 	.global__section-works{
-		grid-template-columns: 1.4fr 1fr;
-
 		margin: 0 135px;
-	}
-	.global__section-works-logo{
-		margin-left: 110px;
 	}
 
 }
 @media screen and (min-width: 1500px) and (max-width: 1700px) {
 
 	.global__section-works{
-		grid-template-columns: 1.2fr 1fr;
-
-		margin: 0 135px;
-	}
-	.global__section-works-logo{
-		margin-left: 90px;
+		margin: 0 125px;
 	}
 
 }
 @media screen and (min-width: 1300px)  and (max-width: 1500px) {
 
 	.global__section-works{
-		grid-template-columns: 1.2fr 1fr;
-
-		margin: 0 135px;
-	}
-	.global__section-works-logo{
-		margin-left: 90px;
+		margin: 0 115px;
 	}
 
 }
 @media screen and (min-width: 1020px) and (max-width: 1300px) {
 
 	.global__section-works{
-		grid-template-columns: 1.2fr 1fr;
-
-		margin: 0 115px;
-	}
-	.global__section-works-logo{
-		margin-left: 70px;
+		margin: 0 100px;
 	}
 
 }
 @media screen and (min-width: 900px) and (max-width: 1020px) {
 
 	.global__section-works{
-		grid-template-columns: 1.2fr 1fr;
-
-		margin: 0 115px;
-	}
-	.global__section-works-logo{
-		margin-left: 50px;
+		margin: 0 90px;
 	}
 
 }
@@ -503,8 +461,6 @@
 @media screen and (min-width: 1860px) {
 
 	.global__section-commercial{
-		grid-template-columns: 2fr 1.5fr;
-
 		padding-left: 105px;
 		padding-right: 200px;
 	}
@@ -513,8 +469,6 @@
 @media screen and (min-width: 1700px) and (max-width: 1860px) {
 
 	.global__section-commercial{
-		grid-template-columns: 2fr 1.7fr;
-
 		padding-left: 105px;
 		padding-right: 170px;
 	}
@@ -523,8 +477,6 @@
 @media screen and (min-width: 1500px) and (max-width: 1700px) {
 
 	.global__section-commercial{
-		grid-template-columns: 2fr 1.8fr;
-
 		padding-left: 105px;
 		padding-right: 150px;
 	}
@@ -533,8 +485,6 @@
 @media screen and (min-width: 1300px)  and (max-width: 1500px) {
 
 	.global__section-commercial{
-		grid-template-columns: 2fr 1.8fr;
-
 		padding-left: 90px;
 		padding-right: 80px;
 	}
@@ -543,8 +493,6 @@
 @media screen and (min-width: 1020px) and (max-width: 1300px) {
 
 	.global__section-commercial{
-		grid-template-columns: 2fr 1.8fr;
-
 		padding-left: 80px;
 		padding-right: 80px;
 	}
