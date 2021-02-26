@@ -397,7 +397,7 @@
 @media screen and (max-width: 900px) {
 
 	.global__section-why{
-		background-image: url("../../img/bg-about-circles-vertical.svg");
+		background-image: url("../../img/svg/bg-about-circles-vertical.svg");
 	}
 	.global__section-why-blocks-list{
 		flex-direction: column;
