@@ -32,8 +32,6 @@
 		[ 't', 'На сайте pixel27.ru вам поступо новое обращение' ],
 		[ 't', 'Подробная информация:' ],
 		[ 't', list_data( $_POST, $CONF_NAMES, $CONF_PLACEHOLDERS ) ],
-		[ 'b', 'Посмотреть на сайте', 'https://pixel27.ru/module_easy-ajax/php/info.php?id='.
-									   $row_id.'&table='.mb_strtolower( $CONF_PROJECT ."id". $id ) ],
 		[ 't', 'Это автоматическое сообщение, на не нужно отвечать' ],
 		[ 't', 'Удачи!' ]
 	];

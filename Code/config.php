@@ -11,7 +11,8 @@
 	$CONF_EMAIL_FROM = "Pixel <info@pixel27.ru>";
 	$CONF_EMAILS  = [
 		"codeoon@mail.ru",
-		// "optimazecode@gmail.com"
+		"optimazecode@gmail.com",
+		"pixel.khv@mail.ru"
 	];
 
 	# Config DB
