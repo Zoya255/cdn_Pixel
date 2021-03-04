@@ -157,3 +157,34 @@
 *Sergo*
 
 - add module EasyAjax V2
+- add favicon
+
+
+## 24.02.2020
+
+*Sergo*
+
+- update burger
+
+
+## 25.02.2020
+
+*Sergo*
+
+- update code
+- fix bugs
+
+
+## 26.02.2020
+
+*Sergo*
+
+- minimaze images
+
+
+## 04.03.2020
+
+*Sergo*
+
+- final update for enterprice
+- update README
