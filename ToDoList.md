@@ -188,3 +188,13 @@
 
 - final update for enterprice
 - update README
+
+
+## 05.03.2020
+
+*Sergo*
+
+- fix email bug
+- add logs for email
+- add animation
+
