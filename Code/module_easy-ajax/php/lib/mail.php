@@ -81,7 +81,7 @@
 		}
 
 		// отправка сообщения
-		mail( $email_to, $variables["title"], $template, $headers );
+		return mail( $email_to, $variables["title"], $template, $headers );
 
 	}
 

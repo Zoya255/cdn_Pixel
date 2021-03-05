@@ -41,5 +41,10 @@
 	];
 
 	foreach ($CONF_EMAILS as $email) {
-		email_send( $CONF_EMAIL_FROM, $email, $vars );
+		$log = R::dispense( "logs" );
+
+		$log["email"] = $email;
+		$log["status"] = email_send( $CONF_EMAIL_FROM, $email, $vars );
+
+		R::store($log);
 	}
