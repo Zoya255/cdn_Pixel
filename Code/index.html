@@ -13,9 +13,9 @@
 
 		<link rel="stylesheet" type="text/css" href="css/min/fonts.min.css">
 
-		<link rel="stylesheet" type="text/css" href="css/min/global.min.css">
+		<link rel="stylesheet" type="text/css" href="css/src/global.css">
 		<link rel="stylesheet" type="text/css" href="css/min/media.min.css">
-		<link rel="stylesheet" type="text/css" href="css/min/mobile.min.css">
+		<link rel="stylesheet" type="text/css" href="css/src/mobile.css">
 
 		<link rel="stylesheet" type="text/css" href="css/min/colors.min.css">
 
@@ -34,6 +34,10 @@
 		<link rel="stylesheet" type="text/css" href="css/min/forms.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/forms-media.min.css">
 		<link rel="stylesheet" type="text/css" href="css/min/forms-mobile.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/src/modals.css">
+		<link rel="stylesheet" type="text/css" href="css/min/modals-media.min.css">
+		<link rel="stylesheet" type="text/css" href="css/min/modals-mobile.min.css">
 
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -276,42 +280,67 @@
 
 				<div class="global__section-portfolio-slider">
 					<div class="global__section-portfolio-slider-item">
-						<p class="global__section-portfolio-slider-text text-mc text-opacity">
-							Субботник Heineken. Heineken за экологичное отношение к природе, здоровый отдых и
-							корпоративные мероприятия соответствуют их культуре. На субботнике сотрудники собрали
-							мусор, очистив территорию озера Рица, а также прошли занимательный квест, получив
-							ценные призы.
+						<p class="global__section-portfolio-slider-text text-md text-opacity" onclick="modal_dior()">
+							<img src="img/svg/icon-more.svg" alt="icon of more info">
+							<br>
+							Подробнее
 						</p>
 
-						<img src="img/min/logo-heineken.jpeg" alt="logo of Heineken"
+						<img src="img/min/dior-main.jpg" alt="logo of Dior"
 						     class="global__section-portfolio-slider-image">
 					</div>
 
 					<div class="global__section-portfolio-slider-item">
-						<p class="global__section-portfolio-slider-text text-mc text-opacity">
-							Beauty-направление. Регулярны для нашего города промо-активности с целью презентации нового
-							продукта в beauty-секторе. Ароматы? Декоративная косметика? Клиентские дни? Наш персонал
-							справится со всем.
+						<p class="global__section-portfolio-slider-text text-md text-opacity" onclick="modal_hein()">
+							<img src="img/svg/icon-more.svg" alt="icon of more info">
+							<br>
+							Подробнее
 						</p>
 
-						<img src="img/min/logo-dior.jpeg" alt="logo of Dior"
+						<img src="img/min/hein-main.jpg" alt="logo of Heineken"
 						     class="global__section-portfolio-slider-image">
 					</div>
 
 					<div class="global__section-portfolio-slider-item">
-						<p class="global__section-portfolio-slider-text text-mc text-opacity">
-							Проект «RBT.RU». Механика: праздничное открытие магазина с участием хостес, промо-персонала
-							для раздачи листовок и шаров, звуковой рекламы на брендированном автомобиле.
+						<p class="global__section-portfolio-slider-text text-md text-opacity" onclick="modal_leonardo()">
+							<img src="img/svg/icon-more.svg" alt="icon of more info">
+							<br>
+							Подробнее
 						</p>
 
-						<img src="img/min/logo-rbt.jpeg" alt="logo of RBT"
+						<img src="img/min/leonardo-main.jpg" alt="logo of Leonardo"
 						     class="global__section-portfolio-slider-image">
+					</div>
+
+					<div class="global__section-portfolio-slider-item">
+						<p class="global__section-portfolio-slider-text text-md text-opacity" onclick="modal_leran()">
+							<img src="img/svg/icon-more.svg" alt="icon of more info">
+							<br>
+							Подробнее
+						</p>
+
+						<img src="img/min/leran-main.jpg" alt="logo of Leran"
+							 class="global__section-portfolio-slider-image">
+					</div>
+
+					<div class="global__section-portfolio-slider-item">
+						<p class="global__section-portfolio-slider-text text-md text-opacity" onclick="modal_rbt()">
+							<img src="img/svg/icon-more.svg" alt="icon of more info">
+							<br>
+							Подробнее
+						</p>
+
+						<img src="img/min/rbt-main.jpg" alt="logo of RBT"
+							 class="global__section-portfolio-slider-image">
 					</div>
 				</div>
 
-				<a href="#form" class="global__section-portfolio-btn btn btn-bordered btn-purple-bordered btn-center">
-					Работать с нами
-				</a>
+				<div>
+					<div class="btn-array-left btn-array-left-portfolio"></div>
+					<div class="btn-array-right btn-array-right-portfolio"></div>
+				</div>
+
+				<script src="js/src/slider-portfolio.js"></script>
 			</section>
 
 			<section class="global__section-why text text-center">
@@ -418,11 +447,11 @@
 				</div>
 
 				<div>
-					<div class="btn-array-left"></div>
-					<div class="btn-array-right"></div>
+					<div class="btn-array-left btn-array-left-services"></div>
+					<div class="btn-array-right btn-array-right-services"></div>
 				</div>
 
-				<script src="js/min/slider.min.js"></script>
+				<script src="js/src/slider-services.js"></script>
 			</section>
 
 			<section class="global__section-commercial">
@@ -538,6 +567,132 @@
 				</form>
 			</section>
 		</main>
+
+		<div class="modal-wrapper modal-wrapper-dior">
+			<section class="modal text text-center">
+				<h3 class="modal-header text-subheader color-gray-text">
+					Beauty-направление
+				</h3>
+
+				<p class="text-md">
+					Регулярны для нашего города промо-активности с целью презентации нового
+					продукта в beauty-секторе. Ароматы? Декоративная косметика? Клиентские дни? Наш персонал
+					справится со всем.
+				</p>
+
+				<div class="modal-images">
+					<img src="img/min/dior-min-1.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-2.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-3.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-4.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-5.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-6.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-7.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-8.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-9.jpg" alt="dior" class="modal-images-img">
+					<img src="img/min/dior-min-10.jpg" alt="dior" class="modal-images-img">
+				</div>
+
+				<div class="modal-btn-close" onclick="modal_exit()"></div>
+			</section>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper-hein">
+			<section class="modal text text-center">
+				<h3 class="modal-header text-subheader color-gray-text">
+					Субботник Heineken
+				</h3>
+
+				<p class="text-md">
+					Heineken за экологичное отношение к природе, здоровый отдых и
+					корпоративные мероприятия соответствуют их культуре. На субботнике сотрудники собрали
+					мусор, очистив территорию озера Рица, а также прошли занимательный квест, получив
+					ценные призы.
+				</p>
+
+				<div class="modal-images">
+					<img src="img/min/hein-min-1.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/hein-min-2.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/hein-min-3.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/hein-min-4.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/hein-min-5.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/hein-min-6.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/hein-min-7.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/hein-min-8.jpg" alt="pixel" class="modal-images-img">
+				</div>
+
+				<div class="modal-btn-close" onclick="modal_exit()"></div>
+			</section>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper-leonardo">
+			<section class="modal text text-center">
+				<h3 class="modal-header text-subheader color-gray-text">
+					Леонардо
+				</h3>
+
+				<p class="text-md">
+					Праздничное открытие магазина с участием хостес, промо-персонала для раздачи листовок и шаров, звуковой рекламы.
+				</p>
+
+				<div class="modal-images">
+					<img src="img/min/leonardo-min-1.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leonardo-min-2.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leonardo-min-3.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leonardo-min-4.jpg" alt="pixel" class="modal-images-img">
+				</div>
+
+				<div class="modal-btn-close" onclick="modal_exit()"></div>
+			</section>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper-leran">
+			<section class="modal text text-center">
+				<h3 class="modal-header text-subheader color-gray-text">
+					Открытие магазина Leran
+				</h3>
+
+				<p class="text-md">
+					Праздничное открытие магазина с участием хостес, промо-персонала для раздачи листовок и шаров, звуковой рекламы.
+				</p>
+
+				<div class="modal-images">
+					<img src="img/min/leran-min-1.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leran-min-2.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leran-min-3.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leran-min-4.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leran-min-5.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leran-min-6.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/leran-min-7.jpg" alt="pixel" class="modal-images-img">
+				</div>
+
+				<div class="modal-btn-close" onclick="modal_exit()"></div>
+			</section>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper-rbt">
+			<section class="modal text text-center">
+				<h3 class="modal-header text-subheader color-gray-text">
+					Проект «RBT.RU».
+				</h3>
+
+				<p class="text-md">
+					Праздничное открытие магазина с участием хостес, промо-персонала для раздачи листовок и шаров, звуковой рекламы.
+				</p>
+
+				<div class="modal-images">
+					<img src="img/min/rbt-min-1.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/rbt-min-2.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/rbt-min-3.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/rbt-min-4.jpg" alt="pixel" class="modal-images-img">
+					<img src="img/min/rbt-min-5.jpg" alt="pixel" class="modal-images-img">
+				</div>
+
+				<div class="modal-btn-close" onclick="modal_exit()"></div>
+			</section>
+		</div>
+
+		<script src="js/src/modals.js"></script>
 
 		<footer class="global__footer text text-sm color-white-text">
 			<div class="global__footer-top-nav">

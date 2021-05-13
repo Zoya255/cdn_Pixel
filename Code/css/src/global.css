@@ -52,6 +52,12 @@
 
 }
 
+/* -------------------- main -------------------- */
+
+.global__main.display{
+	display: none;
+}
+
 /* -------------------- nav in header -------------------- */
 
 .global__nav-list{
@@ -184,6 +190,12 @@
 	height: 385px;
 
 	margin: 0 36px 20px;
+}
+.global__section-portfolio-slider-item:nth-child(1){
+	display: none;
+}
+.global__section-portfolio-slider-item:nth-child(5){
+	display: none;
 }
 .global__section-portfolio-slider-item:hover .global__section-portfolio-slider-image{
 	filter: brightness(0.18)
